@@ -1,18 +1,19 @@
 import Navbar from './Navbar';
-import {content, mainContainer} from './Layout.module.css';
+import {mainContainer} from './Layout.module.css';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import Content from './Content';
 
 function Layout({children}) {
   return (
       <div className={mainContainer}>
         <Navbar/>
         <Sidebar/>
-        <main className={content}>
+        <Content>
           {
             children
           }
-        </main>
+        </Content>
         <Footer/>
       </div>
   );

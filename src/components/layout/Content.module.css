@@ -1,0 +1,6 @@
+.contentContainer {
+  grid-area: content;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 40rem;
+}
