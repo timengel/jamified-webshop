@@ -1,12 +1,8 @@
 import Card from '../ui/Card';
-import {
-  item,
-  itemImage,
-  content,
-  actions
-} from './ProductItem.module.css';
+import {actions, content, item, itemImage} from './ProductItem.module.css';
+import Link from 'next/link';
 
-function ProductItem({title, address, image}) {
+function ProductItem({id, title, address, image}) {
   return (
       <li className={item}>
         <Card>
@@ -17,7 +13,9 @@ function ProductItem({title, address, image}) {
             <address>{address}</address>
           </div>
           <div className={actions}>
-            <button>Show Details</button>
+            <Link href={`/products/${id}`}>
+              <button>Show Details</button>
+            </Link>
           </div>
         </Card>
       </li>

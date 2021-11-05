@@ -22,6 +22,34 @@ const DUMMY_PRODUCTS = [
     image: 'https://picsum.photos/500/300',
     price: '50',
     description: 'This is the third product.'
+  },
+  {
+    id: '4',
+    title: 'Fourth Item',
+    image: 'https://picsum.photos/500/300',
+    price: '12',
+    description: 'This is the fourth product.'
+  },
+  {
+    id: '5',
+    title: 'Fifth Item',
+    image: 'https://picsum.photos/500/300',
+    price: '69',
+    description: 'This is the fifth product.'
+  },
+  {
+    id: '6',
+    title: 'Sixth Item',
+    image: 'https://picsum.photos/500/300',
+    price: '17',
+    description: 'This is the sixth product.'
+  },
+  {
+    id: '7',
+    title: 'Seventh Item',
+    image: 'https://picsum.photos/500/300',
+    price: '99',
+    description: 'This is the seventh product.'
   }
 ];
 
