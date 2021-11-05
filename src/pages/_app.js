@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import colors from '../styles/colors.css'; // Must stay
+import colors from '../styles/Colors.css'; // Must stay
 
 const JamifiedWebshopApp = ({Component, pageProps}) => {
   return (

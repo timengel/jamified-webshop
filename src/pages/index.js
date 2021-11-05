@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Home() {
   return (
-      <div className='container'>
+      <div>
         <Head>
           <title>Create Next App</title>
           <link rel='icon' href='/favicon-t.svg'/>

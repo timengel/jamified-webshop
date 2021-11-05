@@ -1,3 +1,7 @@
+.mainContainer {
+  background: var(--navy-0);
+}
+
 .main {
   margin: 3rem auto;
   width: 100%;
