@@ -1,0 +1,18 @@
+# Dependencies
+/node_modules
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# System files
+.DS_Store
+
+# IDE
+/.idea
