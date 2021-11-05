@@ -1,0 +1,6 @@
+.footer {
+  grid-area: footer;
+  height: 50px;
+  background-color: var(--navy-7);
+  color: var(--navy-1);
+}

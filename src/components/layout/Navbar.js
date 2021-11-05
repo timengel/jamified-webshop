@@ -1,7 +1,7 @@
 import classes from './Navbar.module.css';
 import Link from 'next/link';
 
-function Navbar() {
+const Navbar = () => {
 
   return (
       <header className={classes.header}>
@@ -18,6 +18,6 @@ function Navbar() {
         </nav>
       </header>
   );
-}
+};
 
 export default Navbar;

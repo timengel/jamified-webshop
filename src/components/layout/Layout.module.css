@@ -2,9 +2,9 @@
   background: var(--navy-0);
   display: grid;
   grid-template-areas:
-    "navbar navbar navbar"
-    "sidebar content content"
-    "footer footer footer";
+    'navbar navbar navbar'
+    'sidebar content content'
+    'footer footer footer';
 }
 
 .content {
