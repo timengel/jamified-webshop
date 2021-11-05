@@ -1,11 +1,13 @@
 import MainNavigation from './MainNavigation';
-import {main, mainContainer} from './Layout.module.css';
+import {content, mainContainer} from './Layout.module.css';
+import Sidebar from './Sidebar';
 
 function Layout({children}) {
   return (
       <div className={mainContainer}>
         <MainNavigation/>
-        <main className={main}>
+        <Sidebar/>
+        <main className={content}>
           {
             children
           }

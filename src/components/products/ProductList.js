@@ -1,19 +1,18 @@
 import ProductItem from './ProductItem.js';
-import classes from './ProductList.module.css';
-
+import {productList} from './ProductList.module.css';
 
 function ProductList({products}) {
   return (
-      <ul className={classes.list}>
+      <ul className={productList}>
         {
           products.map((p) => (
-            <ProductItem
-                key={p.id}
-                id={p.id}
-                image={p.image}
-                title={p.title}
-                address={p.address}
-            />
+              <ProductItem
+                  key={p.id}
+                  id={p.id}
+                  image={p.image}
+                  title={p.title}
+                  address={p.address}
+              />
           ))
         }
       </ul>
