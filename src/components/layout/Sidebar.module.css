@@ -1,4 +1,5 @@
 .sideBar {
-  grid-area: sidebar;
+  grid-column: 1 / 2;
+  width: 100%;
   background-color: var(--beige);
 }

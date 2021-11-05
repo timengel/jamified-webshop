@@ -1,6 +1,10 @@
 .contentContainer {
-  grid-area: content;
-  margin: 3rem auto;
+  grid-column: 2 / -1;
   width: 100%;
-  max-width: 40rem;
+  height: 100%;
+  /*grid-template-columns: 200px;*/
+  /*grid-auto-rows: minmax(200px, auto);*/
+  /*grid-row-gap: 20px;*/
+  /*grid-column-gap: 20px;*/
+  /*margin: 3rem auto;*/
 }

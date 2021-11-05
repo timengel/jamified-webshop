@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
 
   return (
-      <header className={classes.header}>
+      <header className={classes.navBar}>
         <div className={classes.logo}>Jamified Webshop</div>
         <nav>
           <ul>

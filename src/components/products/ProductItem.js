@@ -1,17 +1,22 @@
 import Card from '../ui/Card';
-import classes from './ProductItem.module.css';
+import {
+  item,
+  itemImage,
+  content,
+  actions
+} from './ProductItem.module.css';
 
 function ProductItem({title, address, image}) {
   return (
-      <li className={classes.item}>
+      <li className={item}>
         <Card>
-          <div className={classes.image}>
+          <div className={itemImage}>
             <img src={image} alt={title}/></div>
-          <div className={classes.content}>
+          <div className={content}>
             <h3>{title}</h3>
             <address>{address}</address>
           </div>
-          <div className={classes.actions}>
+          <div className={actions}>
             <button>Show Details</button>
           </div>
         </Card>

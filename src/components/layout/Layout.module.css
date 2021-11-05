@@ -1,9 +1,9 @@
-.mainContainer {
-  background: var(--navy-0);
+.layoutContainer {
+  height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-areas:
-    'navbar navbar navbar'
-    'sidebar content content'
-    'footer footer footer';
+  grid-template-columns: minmax(225px, 300px) minmax(600px, auto);
+  grid-template-rows: 2fr 20fr 1fr;
+  background: var(--navy-0);
 }
 
