@@ -2,6 +2,7 @@
   width: 100%;
   height: 5rem;
   grid-area: navbar;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: var(--navy-7);

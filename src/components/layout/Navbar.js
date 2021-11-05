@@ -1,7 +1,7 @@
-import classes from './MainNavigation.module.css';
-import Link from 'next/link'
+import classes from './Navbar.module.css';
+import Link from 'next/link';
 
-function MainNavigation() {
+function Navbar() {
 
   return (
       <header className={classes.header}>
@@ -20,4 +20,4 @@ function MainNavigation() {
   );
 }
 
-export default MainNavigation;
+export default Navbar;

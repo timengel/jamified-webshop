@@ -1,4 +1,4 @@
 .sideBar {
   grid-area: sidebar;
-  background-color: red;
+  background-color: var(--beige);
 }
