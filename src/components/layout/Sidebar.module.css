@@ -1,5 +1,33 @@
-.sideBar {
+.sidebar {
   grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  place-items: center;
   width: 100%;
-  background-color: var(--beige);
+}
+
+.sidebarSection {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(100% - 3px);
+  color: var(--navy-8);
+  background-color: var(--navy-3);
+  border-top: 3px solid var(--navy-0);
+  box-shadow: inset 0 0 7px var(--navy-6);
+}
+
+.sidebarSection:hover,
+.sidebarSection:active,
+.sidebarSection.active {
+  color: var(--navy-2);
+  background-color: var(--navy-5);
+  box-shadow: inset 0 0 7px var(--navy-1);
+}
+
+
+.lastSidebarSection {
+  border-bottom: 3px solid var(--navy-0);
 }
