@@ -4,7 +4,7 @@ import {
   sidebarSection,
   lastSidebarSection
 } from './Sidebar.module.css';
-import {FaMountain} from 'react-icons/fa';
+import {FaMountain, FaRunning} from 'react-icons/fa';
 import {
   MdSportsTennis,
   MdSportsBasketball,
@@ -16,6 +16,7 @@ const sectionIcons = [
   <MdBusinessCenter/>,
   <MdSportsBasketball/>,
   <MdSportsTennis/>,
+  <FaRunning/>,
   <FaMountain/>,
 ];
 

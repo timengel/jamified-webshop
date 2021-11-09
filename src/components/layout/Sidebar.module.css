@@ -2,9 +2,9 @@
   grid-column: 1 / 2;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  place-items: center;
+  grid-template-rows: repeat(4, 100px);
   width: 100%;
+  background-color: var(--navy-3);
 }
 
 .sidebarSection {
@@ -12,7 +12,7 @@
   display: grid;
   place-items: center;
   width: 100%;
-  height: calc(100% - 3px);
+  height: 100px;
   color: var(--navy-8);
   background-color: var(--navy-3);
   border-top: 3px solid var(--navy-0);
