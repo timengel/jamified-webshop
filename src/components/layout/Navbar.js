@@ -1,8 +1,8 @@
 import {
-  navBar,
+  navbar,
   websiteLogo,
-  navCell,
-  navCellContainer,
+  navSection,
+  navSectionContainer,
   logoText,
 } from './Navbar.module.css';
 import Link from 'next/link';
@@ -12,7 +12,7 @@ import logoPic from '../../../public/png/logo_jamified-webshop.png';
 const Navbar = () => {
 
   return (
-      <header className={navBar}>
+      <header className={navbar}>
         <div className={websiteLogo}><Image src={logoPic}
                                             alt='Jamified Webshop'
                                             height='100px'
@@ -20,13 +20,13 @@ const Navbar = () => {
                                             placeholder='blur'/><span
             className={logoText}>Jamified<br/>Webshop</span>
         </div>
-        <nav className={navCellContainer}>
-          <div className={navCell}>
+        <nav className={navSectionContainer}>
+          <div className={navSection}>
             <Link href='/'>
               <button>Home</button>
             </Link>
           </div>
-          <div className={navCell}>
+          <div className={navSection}>
             <Link href='/products'>
               <button>Products</button>
             </Link>
