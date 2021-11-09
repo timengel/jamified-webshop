@@ -3,6 +3,12 @@
 }
 
 .navbar {
+  --nav-light: var(--navy-3);
+  --nav-medium: var(--navy-6);
+  --nav-dark: var(--navy-7);
+  --nav-light--active: var(--navy-1);
+  --nav-medium--active: var(--navy-5);
+  --nav-dark--active: var(--navy-6);
   width: 100%;
   height: 100%;
   min-height: 120px;
@@ -10,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--navy-7);
+  background-color: var(--nav-dark);
 }
 
 .websiteLogo {
@@ -24,7 +30,7 @@
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--navy-3);
+  color: var(--nav-light);
 }
 
 .navSectionContainer {
@@ -40,21 +46,20 @@
 
 .navSection button {
   font-size: 1.2rem;
-  color: var(--navy-3);
+  color: var(--nav-light);
   width: 8.5rem;
   height: 4.5rem;
-  border: 2px solid var(--navy-3);
-  background-color: transparent;
+  border: 2px solid var(--nav-dark);
+  background-color: var(--nav-medium);
   padding: 0;
-  border-radius: 4px;
-  box-shadow: inset 0 0 6px var(--navy-3);
+  border-radius: var(--border-radius);
 }
 
 .navSection button:hover,
 .navSection button:active,
 .navSection button.active {
-  color: var(--navy-1);
-  border-color: var(--navy-1);
-  background-color: var(--navy-6);
-  box-shadow: 0 0 4px var(--navy-1);
+  color: var(--nav-light--active);
+  border-color: var(--nav-medium--active);
+  background-color: var(--nav-medium--active);
+  box-shadow: 0 0 4px var(--nav-medium--active);
 }
