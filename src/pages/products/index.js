@@ -2,10 +2,13 @@ import React from 'react';
 import ProductList from '../../components/products/ProductList';
 
 const DUMMY_IMG_STYLE_1 = '/style/shoe_style_1.jpeg'; // Random image URL: 'https://picsum.photos/500/300'
-const DUMMY_IMG_STYLE_2 = '/style/shoe_style_2.jpeg'; // Random image URL: 'https://picsum.photos/500/300'
-const DUMMY_IMG_STYLE_3 = '/style/shoe_style_3.jpeg'; // Random image URL: 'https://picsum.photos/500/300'
-const DUMMY_IMG_RUNNING_1 = '/running/shoe_running_1.jpeg'; // Random image URL: 'https://picsum.photos/500/300'
-const DUMMY_IMG_RUNNING_2 = '/running/shoe_running_2.jpeg'; // Random image URL: 'https://picsum.photos/500/300'
+const DUMMY_IMG_STYLE_2 = '/style/shoe_style_2.jpeg';
+const DUMMY_IMG_STYLE_3 = '/style/shoe_style_3.jpeg';
+const DUMMY_IMG_STYLE_4 = '/style/shoe_style_4.jpeg';
+const DUMMY_IMG_RUNNING_1 = '/running/shoe_running_1.jpeg';
+const DUMMY_IMG_RUNNING_2 = '/running/shoe_running_2.jpeg';
+const DUMMY_IMG_RUNNING_3 = '/running/shoe_running_3.jpeg';
+const DUMMY_IMG_BB_1 = '/bb/shoe_bb_1.jpeg';
 const DUMMY_PRODUCTS = [
   {
     id: '1',
@@ -31,7 +34,7 @@ const DUMMY_PRODUCTS = [
   {
     id: '4',
     title: 'Fourth Item',
-    image: DUMMY_IMG_STYLE_1,
+    image: DUMMY_IMG_STYLE_4,
     price: '12',
     description: 'This is the fourth product.'
   },
@@ -52,9 +55,16 @@ const DUMMY_PRODUCTS = [
   {
     id: '7',
     title: 'Seventh Item',
-    image: DUMMY_IMG_RUNNING_1,
+    image: DUMMY_IMG_RUNNING_3,
     price: '99',
     description: 'This is the seventh product.'
+  },
+  {
+    id: '7',
+    title: 'Eight Item',
+    image: DUMMY_IMG_BB_1,
+    price: '99',
+    description: 'This is the eight product.'
   }
 ];
 

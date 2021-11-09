@@ -7,7 +7,7 @@ import {
 } from './Navbar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logoPic from '../../../public/png/logo_jamified-webshop.png';
+import logoPic from '../../../public/logo/logo_jamified-webshop.png';
 
 const Navbar = () => {
 
