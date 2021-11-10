@@ -11,7 +11,7 @@
   --nav-dark--active: var(--navy-6);
   width: 100%;
   height: 100%;
-  min-height: 120px;
+  min-height: 112px;
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
@@ -29,7 +29,8 @@
 .logoText {
   display: block;
   font-size: 2rem;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
   color: var(--nav-light);
 }
 
@@ -53,6 +54,7 @@
   color: var(--nav-light);
   width: auto;
   text-transform: uppercase;
+  font-weight: var(--font-weight-light);
   border: 2px solid var(--nav-dark);
   background-color: transparent;
   padding: 0;
