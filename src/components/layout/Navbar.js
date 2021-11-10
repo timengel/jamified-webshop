@@ -31,6 +31,11 @@ const Navbar = () => {
               <button>Products</button>
             </Link>
           </div>
+          <div className={navSection}>
+            <Link href='/about'>
+              <button>About</button>
+            </Link>
+          </div>
         </nav>
       </header>
   );
