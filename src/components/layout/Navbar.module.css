@@ -47,8 +47,9 @@
 .navSection button {
   font-size: 1.2rem;
   color: var(--nav-light);
-  width: 8.5rem;
-  height: 4.5rem;
+  width: 8rem;
+  height: 4rem;
+  text-transform: uppercase;
   border: 2px solid var(--nav-dark);
   background-color: var(--nav-medium);
   padding: 0;

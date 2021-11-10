@@ -60,7 +60,7 @@ const DUMMY_PRODUCTS = [
     description: 'This is the seventh product.'
   },
   {
-    id: '7',
+    id: '8',
     title: 'Eight Item',
     image: DUMMY_IMG_BB_1,
     price: '99',

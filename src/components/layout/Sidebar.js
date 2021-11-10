@@ -28,7 +28,7 @@ const Sidebar = () => {
         {
           sectionIcons.map((icon, index) => {
             return (
-                <div className={`
+                <div key={index} className={`
                 ${sidebarSection}
                 ${index === (sectionIcons.length - 1)
                     ? lastSidebarSection
