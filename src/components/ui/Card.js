@@ -1,4 +1,4 @@
-import {card} from './Card.module.css';
+import {card} from './Card.module.scss';
 
 function Card({children}) {
   return <div className={card}>

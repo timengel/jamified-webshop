@@ -1,5 +1,5 @@
 import React from 'react';
-import {contentContainer} from './Content.module.css';
+import {contentContainer} from './Content.module.scss';
 
 const Content = ({children}) => {
   return (

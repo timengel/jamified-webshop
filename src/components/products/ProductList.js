@@ -1,5 +1,5 @@
 import ProductItem from './ProductItem.js';
-import {productList} from './ProductList.module.css';
+import {productList} from './ProductList.module.scss';
 
 function ProductList({products}) {
   return (

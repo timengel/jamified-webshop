@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {home} from './Home.module.css';
+import {home} from './Home.module.scss';
 
 function Home() {
   return (

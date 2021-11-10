@@ -4,7 +4,7 @@ import {
   navSection,
   navSectionContainer,
   logoText,
-} from './Navbar.module.css';
+} from './Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoPic from '../../../public/logo/logo_jamified-webshop.png';
