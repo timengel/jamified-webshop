@@ -3,7 +3,7 @@ import {
   sidebar,
   sidebarSection,
   lastSidebarSection
-} from './Sidebar.module.css';
+} from './Sidebar.module.scss';
 import {FaMountain, FaRunning} from 'react-icons/fa';
 import {
   MdSportsTennis,

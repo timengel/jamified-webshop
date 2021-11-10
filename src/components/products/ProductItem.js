@@ -1,5 +1,11 @@
 import Card from '../ui/Card';
-import {detailBtn, content, item, itemImage} from './ProductItem.module.css';
+import {
+  detailBtnContainer,
+  detailBtn,
+  content,
+  item,
+  itemImage
+} from './ProductItem.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -17,9 +23,9 @@ function ProductItem({id, title, address, image}) {
             <h3>{title}</h3>
             <address>{address}</address>
           </div>
-          <div className={detailBtn}>
+          <div className={detailBtnContainer}>
             <Link href={`/products/${id}`}>
-              <button>Show Details</button>
+              <button className={detailBtn}>Show Details</button>
             </Link>
           </div>
         </Card>
