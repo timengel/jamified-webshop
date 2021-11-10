@@ -7,8 +7,16 @@ architecture. A more detailed description will follow.
 
 ## ToDo List
 
+- **Frontend**
+    - [ ] Make vertically scrolling product list
+        - Show only 20 products at a time without scrolling
+    - [ ] Add dynamic product detail pages (fetch data from CMS?)
+    - [ ] Add product categories (incl. filter?)
+        - Add header/banner for every category (jumbotron style)
+        - Add dynamic styling for categories (e.g. different backgrounds)
 - **Rendering**
     - [ ] Test different rendering strategies --> Performance
+        - Pre-render 20/100 products, load more on scroll
 - **Build Process**
     - [ ] Deploy App on Vercel
     - [ ] Make use of ISR (+ On-demand builders?) --> Build speed up?
