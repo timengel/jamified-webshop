@@ -4,6 +4,7 @@ import {
   navSection,
   navSectionContainer,
   logoText,
+  login,
 } from './Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -37,6 +38,11 @@ const Navbar = () => {
             </Link>
           </div>
         </nav>
+        <div className={login}>
+          <Link href='/login'>
+            <button>Login</button>
+          </Link>
+        </div>
       </header>
   );
 };

@@ -46,21 +46,43 @@
   height: 100%;
   display: grid;
   place-items: center;
+
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--nav-light);
+    width: auto;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-light);
+    border: 2px solid var(--nav-dark);
+    background-color: transparent;
+    padding: 0;
+
+    &:hover,
+    &:active {
+      color: var(--nav-light--active);
+    }
+  }
 }
 
-.navSection button {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--nav-light);
-  width: auto;
-  text-transform: uppercase;
-  font-weight: var(--font-weight-light);
-  border: 2px solid var(--nav-dark);
-  background-color: transparent;
-  padding: 0;
-}
+.login {
+  margin-left: auto;
 
-.navSection button:hover,
-.navSection button:active {
-  color: var(--nav-light--active);
+  button {
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    color: var(--nav-light);
+    background-color: var(--nav-dark);
+    border-color: var(--nav-medium);
+    border-radius: var(--border-radius);
+
+    &:hover,
+    &:active {
+      background-color: var(--nav-dark--active);
+      color: var(--nav-light--active);
+    }
+  }
 }
