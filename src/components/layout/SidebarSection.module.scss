@@ -1,0 +1,40 @@
+.sidebarSection {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  place-items: center;
+  width: 100%;
+  height: var(--sidebar-section-height);
+  color: var(--navy-8);
+  background-color: var(--navy-3);
+  border-top: 3px solid var(--navy-0);
+
+  background: {
+    image: linear-gradient(45deg, var(--navy-7) 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 285ms ease-in-out;
+}
+
+.sidebarSection:hover,
+.sidebarSection:active, {
+  background-position: 0;
+  color: var(--navy-2);
+
+  box-shadow: inset 0 0 7px var(--navy-1);
+}
+
+
+.bottomSidebarSection {
+  border-bottom: 3px solid var(--navy-0);
+}
+
+.sectionName {
+  grid-column: 1 / 2;
+  font-weight: var(--font-weight-medium);
+}
+
+.sectionIcon {
+  grid-column: 2 / 3;
+}

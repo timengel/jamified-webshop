@@ -1,8 +1,6 @@
 import React from 'react';
 import {
-  sidebar,
-  sidebarSection,
-  lastSidebarSection
+  sidebar
 } from './Sidebar.module.scss';
 import {FaMountain, FaRunning} from 'react-icons/fa';
 import {
@@ -11,35 +9,45 @@ import {
   MdBusinessCenter
 } from 'react-icons/md';
 import {IconContext} from 'react-icons';
+import SidebarSection from './SidebarSection';
 
-const sectionIcons = [
-  <MdBusinessCenter/>,
-  <MdSportsBasketball/>,
-  <MdSportsTennis/>,
-  <FaRunning/>,
-  <FaMountain/>,
+const sections = [
+  {
+    name: 'Style',
+    icon: <MdBusinessCenter/>
+  },
+  {
+    name: 'Basketball',
+    icon: <MdSportsBasketball/>
+  },
+  {
+    name: 'Tennis',
+    icon: <MdSportsTennis/>
+  },
+  {
+    name: 'Running',
+    icon: <FaRunning/>
+  },
+  {
+    name: 'Outdoor',
+    icon: <FaMountain/>
+  },
 ];
-
-const iconSizePx = '50';
 
 const Sidebar = () => {
   return (
       <div className={sidebar}>
         {
-          sectionIcons.map((icon, index) => {
+          sections.map((s, index) => {
             return (
-                <div key={index} className={`
-                ${sidebarSection}
-                ${index === (sectionIcons.length - 1)
-                    ? lastSidebarSection
-                    : ''}`}>
-                  <IconContext.Provider
-                      value={{size: iconSizePx}}>
-                    {icon}
-                  </IconContext.Provider>
-                </div>
-            )
-                ;
+                <SidebarSection key={index}
+                                name={s.name}
+                                bottomSection={`${(index === (s.length - 1))}`}>
+                  {
+                    s.icon
+                  }
+                </SidebarSection>
+            );
           })
         }
       </div>
