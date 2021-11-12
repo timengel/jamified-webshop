@@ -27,6 +27,7 @@ architecture. A more detailed description will follow.
 - **Edge Computing**
     - [ ] Choose use case(s)
         - Redirects (based on Geolocation --> Different prices, shipping, etc.)
+        - Warenkorb Reservierung (in Upstash Item ID für andere locken?)
     - [ ] Add Next.js _middleware
     - [ ] Deploy as Edge Functions / Cloud workers
 - **Third Party APIs**
