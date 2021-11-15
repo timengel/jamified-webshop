@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {home} from './Home.module.scss';
+import {home} from '../styles/Home.module.scss';
 import LoginForm from '../components/login/LoginForm';
 
 function Home() {
