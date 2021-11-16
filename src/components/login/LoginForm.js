@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect, useLayoutEffect} from 'react';
+import {loginFormContainer} from './LoginForm.module.scss';
 
 const LoginForm = () => {
 
@@ -68,7 +69,7 @@ const LoginForm = () => {
   };
 
   return (
-      <div>
+      <div className={loginFormContainer}>
         {
           (isAuthenticated) ? (
               <div>

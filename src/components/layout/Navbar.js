@@ -9,8 +9,15 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import logoPic from '../../../public/logo/logo_jamified-webshop.png';
+import {useEffect, useState} from 'react';
 
 const Navbar = () => {
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    sessionStorage.setItem('isAuthenticated', isAuthenticated.toString());
+  }, [isAuthenticated]);
 
   return (
       <header className={navbar}>
@@ -39,8 +46,8 @@ const Navbar = () => {
           </div>
         </nav>
         <div className={login}>
-          <Link href='/'>
-            <button>Login</button>
+          <Link href='/auth'>
+            <button>{(isAuthenticated) ? 'Login' : 'Logout'}</button>
           </Link>
         </div>
       </header>
