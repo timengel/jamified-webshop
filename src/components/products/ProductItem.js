@@ -4,6 +4,7 @@ import {
   detailBtn,
   content,
   item,
+  featuredItem,
   itemImage
 } from './ProductItem.module.scss';
 import Link from 'next/link';
@@ -17,19 +18,21 @@ import running2 from '../../../public/running/shoe_running_2.jpg';
 import running3 from '../../../public/running/shoe_running_3.jpg';
 import bb1 from '../../../public/bb/shoe_bb_1.jpg';
 
-function ProductItem({id, title, address, imageIndex}) {
+function ProductItem({id, title, address, imageIndex, featured}) {
   const productPics = [
     style1, style2, style3, style4, running1, running2, running3, bb1
   ];
+
   return (
-      <li className={item}>
+      <li className={`${featured ? featuredItem : item}`}>
         <Card>
           <div className={itemImage}>
             <Image src={productPics[imageIndex]}
                    alt={title}
                    width='500'
                    height='300'
-                   placeholder='blur'/>
+                   placeholder='blur'
+                   layout='responsive'/>
           </div>
           <div className={content}>
             <h3>{title}</h3>
