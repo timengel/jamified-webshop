@@ -1,32 +1,20 @@
 import React from 'react';
-import {useState, useEffect, useLayoutEffect} from 'react';
+import {useState, useEffect, useLayoutEffect, useRef} from 'react';
 import {loginFormContainer} from './LoginForm.module.scss';
+import cookieCutter from 'cookie-cutter';
+import {SignJWT} from 'jose';
+import {nanoid} from 'nanoid';
+import {serverRuntimeConfig} from '../../../next.config';
+import {USER_TOKEN} from '../../../lib/constants';
 
 const LoginForm = () => {
 
-  const [details, setDetails] = useState({name: '', password: ''});
-  const [user, setUser] = useState({name: '', password: ''});
+  const nameInputRef = useRef();
+  const passwordInputRef = useRef();
+
+  const [username, setUsername] = useState('');
   const [error, setError] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useLayoutEffect(() => {
-    if (sessionStorage.getItem('isAuthenticated') && sessionStorage.getItem(
-        'user_name')) {
-      setIsAuthenticated(
-          Boolean(sessionStorage.getItem('isAuthenticated')));
-      setUser({name: sessionStorage.getItem('user_name'), password: ''});
-    } else {
-      sessionStorage.setItem('isAuthenticated', 'false');
-    }
-  }, []);
-
-  useEffect(() => {
-    sessionStorage.setItem('isAuthenticated', isAuthenticated.toString());
-  }, [isAuthenticated]);
-
-  useEffect(() => {
-    sessionStorage.setItem('user_name', user.name);
-  }, [user]);
 
   const adminUser = {
     name: 'admin',
@@ -38,11 +26,13 @@ const LoginForm = () => {
 
     if (details.name === adminUser.name && details.password
         === adminUser.password) {
-      setUser({
-        name: details.name,
-        password: details.password,
-      });
+      setUsername(details.name);
       setIsAuthenticated(true);
+
+      const token = serverRuntimeConfig.dummyTokenValue;
+
+      // Set cookie
+      cookieCutter.set(USER_TOKEN, token);
       console.log('Logged in!');
     } else {
       setError('Details do not match!');
@@ -51,21 +41,29 @@ const LoginForm = () => {
   };
 
   const Logout = () => {
-    setUser({
-      name: '',
-      password: '',
-    });
+    setUsername('');
     setIsAuthenticated(false);
+
+    // Delete cookie
+    cookieCutter.set(USER_TOKEN, '', {expires: new Date(0)});
     console.log('Logged out!');
   };
 
   const validateForm = () => {
-    return details.name.length > 0 && details.password.length > 0;
+    return true;
+    // return details.name.length > 0 && details.password.length > 0;
   };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    Login(details);
+  const loginSubmitHandler = (event) => {
+    event.preventDefault();
+
+    const enteredName = nameInputRef.current.value;
+    const enteredPassword = passwordInputRef.current.value;
+
+    // Add validation logic here
+
+    setUsername(enteredName);
+    Login({name: enteredName, password: enteredPassword});
   };
 
   return (
@@ -73,7 +71,7 @@ const LoginForm = () => {
         {
           (isAuthenticated) ? (
               <div>
-                <h2>Welcome, <span>{user.name}</span>!</h2>
+                <h2>Welcome, <span>{username}</span>!</h2>
                 <button onClick={Logout}>Logout</button>
               </div>
           ) : (
@@ -86,15 +84,17 @@ const LoginForm = () => {
                       <div>Please provide your credentials:</div>
                   )
                 }
-                <form onSubmit={submitHandler}>
-                  <input type='text' name='name' value={details.name}
-                         onChange={(e) => setDetails(
-                             {...details, name: e.target.value})}/><br/>
-                  <input type='password' name='password'
-                         value={details.password}
-                         onChange={(e) => setDetails(
-                             {...details, password: e.target.value})}/><br/>
-                  <input type='submit' value='Login'
+                <form onSubmit={loginSubmitHandler}>
+                  <input type='text'
+                         name='name'
+                         required
+                         ref={nameInputRef}/><br/>
+                  <input type='password'
+                         name='password'
+                         required
+                         ref={passwordInputRef}/><br/>
+                  <input type='submit'
+                         value='Login'
                          disabled={!validateForm()}/><br/>
                 </form>
               </div>

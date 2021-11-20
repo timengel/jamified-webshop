@@ -13,12 +13,6 @@ import {useEffect, useState} from 'react';
 
 const Navbar = () => {
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    sessionStorage.setItem('isAuthenticated', isAuthenticated.toString());
-  }, [isAuthenticated]);
-
   return (
       <header className={navbar}>
         <div className={websiteLogo}><Image src={logoPic}
@@ -40,15 +34,20 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={navSection}>
+            <a href='/profile'>
+              <button>Profile</button>
+            </a>
+          </div>
+          <div className={navSection}>
             <Link href='/about'>
               <button>About</button>
             </Link>
           </div>
         </nav>
         <div className={login}>
-          <Link href='/auth'>
-            <button>{(isAuthenticated) ? 'Login' : 'Logout'}</button>
-          </Link>
+          <a href='/auth'>
+            <button>Login</button>
+          </a>
         </div>
       </header>
   );
