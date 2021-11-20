@@ -17,8 +17,8 @@ const Navbar = () => {
       <header className={navbar}>
         <div className={websiteLogo}><Image src={logoPic}
                                             alt='Jamified Webshop'
-                                            height='100px'
-                                            width='100px'
+                                            height='70px'
+                                            width='70px'
                                             placeholder='blur'/><span
             className={logoText}>Jamified<br/>Webshop</span>
         </div>
