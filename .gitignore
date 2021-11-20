@@ -10,6 +10,7 @@
 
 # Production
 /build
+.env.local
 
 # System files
 .DS_Store
