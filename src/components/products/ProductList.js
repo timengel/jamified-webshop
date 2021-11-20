@@ -9,7 +9,7 @@ function ProductList({products}) {
               <ProductItem
                   key={p.id}
                   id={p.id}
-                  image={p.image}
+                  imageIndex={p.image}
                   title={p.title}
                   address={p.address}
               />
