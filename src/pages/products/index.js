@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductList from '../../components/products/ProductList';
+import {fetchApi} from '../../../lib/api';
 
 const RANDOM_DUMMY_IMG_URL = 'https://picsum.photos/500/300';
 const DUMMY_PRODUCTS = [
@@ -70,7 +71,7 @@ const Products = ({products}) => {
 // Will be executed on the server during build time
 export async function getStaticProps() {
   // Fetch products from CMS
-  const fetchedProducts = DUMMY_PRODUCTS;
+  const fetchedProducts = await fetchApi('/articles');
   return {
     props: {
       products: fetchedProducts

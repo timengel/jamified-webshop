@@ -9,9 +9,9 @@ function ProductList({products}) {
                   <ProductItem
                       key={p.id}
                       id={p.id}
-                      imageIndex={p.image}
+                      imageIndex={p.id}
                       title={p.title}
-                      price={p.price}
+                      description={p.description}
                       featured={(index === 0)}/>
               )
           )

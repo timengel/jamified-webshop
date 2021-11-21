@@ -2,7 +2,6 @@ import {
   card,
   content,
   detailBtn,
-  detailBtnContainer,
   featuredItem,
   item,
   itemImage
@@ -18,7 +17,7 @@ import running2 from '../../../public/running/shoe_running_2.jpg';
 import running3 from '../../../public/running/shoe_running_3.jpg';
 import bb1 from '../../../public/bb/shoe_bb_1.jpg';
 
-function ProductItem({id, title, price, imageIndex, featured}) {
+function ProductItem({id, title, description, imageIndex, featured}) {
   const productPics = [
     style1, style2, style3, style4, running1, running2, running3, bb1
   ];
@@ -26,18 +25,16 @@ function ProductItem({id, title, price, imageIndex, featured}) {
   return (
       <li className={`${card} ${featured ? featuredItem : item}`}>
         <div className={itemImage}>
-          {/*<Image src={productPics[imageIndex]}*/}
-          {/*       alt={title}*/}
-          {/*       width='500'*/}
-          {/*       height='300'*/}
-          {/*       placeholder='blur'*/}
-          {/*       layout='responsive'/>*/}
+          <Image src={productPics[imageIndex - 1]}
+                 alt={title}
+                 width='500'
+                 height='300'
+                 placeholder='blur'
+                 layout='responsive'/>
         </div>
         <div className={content}>
           <h3>{title}</h3>
-          <div>{price}</div>
-        </div>
-        <div className={detailBtnContainer}>
+          <p>{description}</p>
           <Link href={`/products/${id}`}>
             <button className={detailBtn}>Show Details</button>
           </Link>
