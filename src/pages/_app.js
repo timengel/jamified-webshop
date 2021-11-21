@@ -11,7 +11,7 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
         <Layout>
           <Head>
             <title>Jamified Webshop</title>
-            <link rel='icon' href='/favicon-t.svg'/>
+            <link rel='icon' href='../../public/favicon-t.svg'/>
           </Head>
           <Component {...pageProps}/>
         </Layout>

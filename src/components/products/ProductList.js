@@ -11,7 +11,7 @@ function ProductList({products}) {
                       id={p.id}
                       imageIndex={p.image}
                       title={p.title}
-                      address={p.address}
+                      price={p.price}
                       featured={(index === 0)}/>
               )
           )
