@@ -1,10 +1,10 @@
-import Card from '../ui/Card';
 import {
-  detailBtnContainer,
-  detailBtn,
+  card,
   content,
-  item,
+  detailBtn,
+  detailBtnContainer,
   featuredItem,
+  item,
   itemImage
 } from './ProductItem.module.scss';
 import Link from 'next/link';
@@ -24,26 +24,24 @@ function ProductItem({id, title, address, imageIndex, featured}) {
   ];
 
   return (
-      <li className={`${featured ? featuredItem : item}`}>
-        <Card>
-          <div className={itemImage}>
-            <Image src={productPics[imageIndex]}
-                   alt={title}
-                   width='500'
-                   height='300'
-                   placeholder='blur'
-                   layout='responsive'/>
-          </div>
-          <div className={content}>
-            <h3>{title}</h3>
-            <address>{address}</address>
-          </div>
-          <div className={detailBtnContainer}>
-            <Link href={`/products/${id}`}>
-              <button className={detailBtn}>Show Details</button>
-            </Link>
-          </div>
-        </Card>
+      <li className={`${card} ${featured ? featuredItem : item}`}>
+        <div className={itemImage}>
+          <Image src={productPics[imageIndex]}
+                 alt={title}
+                 width='500'
+                 height='300'
+                 placeholder='blur'
+                 layout='responsive'/>
+        </div>
+        <div className={content}>
+          <h3>{title}</h3>
+          <address>{address}</address>
+        </div>
+        <div className={detailBtnContainer}>
+          <Link href={`/products/${id}`}>
+            <button className={detailBtn}>Show Details</button>
+          </Link>
+        </div>
       </li>
   );
 }
