@@ -23,7 +23,6 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
-  //background-color: var(--card-light);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -81,24 +80,25 @@
   width: 100%;
   height: 1rem;
   margin: 0;
-  color: var(--card-text-desc);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .detailsDesc {
   flex: 4;
   white-space: nowrap;
+  color: var(--card-text-desc);
   font-weight: var(--font-weight-light);
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .detailsPrice {
   flex: 1;
-  margin-left: 1rem;
   font-weight: var(--font-weight-light);
   text-align: right;
-  font-style: italic;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--card-dark);
 }
 
 .detailBtn {
