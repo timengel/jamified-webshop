@@ -4,13 +4,16 @@ import {
   detailBtn,
   featuredItem,
   item,
-  itemImage
+  itemImage,
+  detailsOverview,
+  detailsDesc,
+  detailsPrice,
 } from './ProductItem.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 
-function ProductItem({id, title, description, image, featured}) {
+function ProductItem({id, title, description, price, image, featured}) {
   const imageUrl = getStrapiMedia(image);
 
   return (
@@ -24,7 +27,10 @@ function ProductItem({id, title, description, image, featured}) {
         </div>
         <div className={content}>
           <h3>{title}</h3>
-          <p>{description}</p>
+          <div className={detailsOverview}>
+            <p className={detailsDesc}>{description}</p>
+            <p className={detailsPrice}>{price}€</p>
+          </div>
           <Link href={`/products/${id}`}>
             <button className={detailBtn}>Show Details</button>
           </Link>

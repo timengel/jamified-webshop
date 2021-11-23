@@ -10,7 +10,7 @@ const Products = ({products}) => {
 
 // Will be executed on the server during build time
 export async function getStaticProps() {
-  const fetchedProducts = await fetchApi('/articles');
+  const fetchedProducts = await fetchApi('/products');
 
   return {
     props: {

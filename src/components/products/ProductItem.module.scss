@@ -19,6 +19,9 @@
   --card-light--active: var(--salmon-1);
   --card-medium--active: var(--salmon-2);
   --card-dark--active: var(--salmon-6);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
   background-color: var(--card-light);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -38,7 +41,7 @@
 
 .itemImage {
   width: 100%;
-  height: 10rem;
+  height: 100%;
   overflow: hidden;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -51,23 +54,45 @@
 }
 
 .content {
+  border-top: 1px solid var(--card-dark);
   text-align: center;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0;
 }
 
 .content h3 {
   font-size: 1.25rem;
+  margin: 1.5rem 1.5rem 0 1.5rem;
   color: var(--card-text-heading);
 }
 
-.content p {
-  width: auto;
+.detailsOverview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem 0 1.5rem;
+}
+
+.detailsOverview p {
+  width: 100%;
   height: 1rem;
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0;
   color: var(--card-text-desc);
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.detailsDesc {
+  flex: 4;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.detailsPrice {
+  flex: 1;
+  margin-left: 1rem;
+  font-weight: var(--font-weight-light);
+  text-align: right;
+  font-style: italic;
 }
 
 .detailBtn {

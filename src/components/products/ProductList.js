@@ -11,6 +11,7 @@ function ProductList({products}) {
                       id={p.id}
                       image={p.image}
                       title={p.title}
+                      price={p.price}
                       description={p.description}
                       featured={(index === 0)}/>
               )
