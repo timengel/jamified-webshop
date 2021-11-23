@@ -11,18 +11,19 @@
 }
 
 .card {
-  --card-light: var(--salmon-0);
-  --card-medium: var(--salmon-1);
+  --card-light-0: var(--salmon-0);
+  --card-light-1: var(--salmon-1);
+  --card-medium: var(--salmon-3);
   --card-dark: var(--salmon-5);
-  --card-text-heading: var(--salmon-5);
-  --card-text-desc: var(--salmon-3);
-  --card-light--active: var(--salmon-1);
-  --card-medium--active: var(--salmon-2);
+  --card-text-heading: var(--salmon-6);
+  --card-text-desc: var(--salmon-4);
+  --card-light--active: var(--salmon-2);
+  --card-medium--active: var(--salmon-4);
   --card-dark--active: var(--salmon-6);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
-  background-color: var(--card-light);
+  //background-color: var(--card-light);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -45,6 +46,7 @@
   overflow: hidden;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  background-color: var(--card-light-0);
 }
 
 .itemImage img {
@@ -57,6 +59,7 @@
   border-top: 1px solid var(--card-dark);
   text-align: center;
   margin: 0;
+  background-color: var(--card-light-1);
 }
 
 .content h3 {
@@ -121,5 +124,5 @@
   box-shadow: 0 0 3px var(--card-dark);
   border-color: var(--card-dark);
   background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
-  color: var(--card-light);
+  color: var(--card-light-1);
 }
