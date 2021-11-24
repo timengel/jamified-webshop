@@ -23,20 +23,12 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.item {
   width: 20rem;
   height: 20rem;
   margin: 1.5rem 0 0 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.featuredItem {
-  width: 41.5rem;
-  height: 20rem;
-  margin: 1.5rem 0 0 1.5rem;
-}
 
 .itemImage {
   width: 100%;

@@ -2,8 +2,6 @@ import {
   card,
   content,
   detailBtn,
-  featuredItem,
-  item,
   itemImage,
   detailsOverview,
   detailsDesc,
@@ -13,11 +11,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 
-function ProductItem({id, title, description, price, image, featured}) {
+function ProductItem({id, title, description, price, image}) {
   const imageUrl = getStrapiMedia(image);
 
   return (
-      <li className={`${card} ${featured ? featuredItem : item}`}>
+      <li className={`${card}`}>
         <div className={itemImage}>
           <Image src={imageUrl}
                  alt={title || image.name}

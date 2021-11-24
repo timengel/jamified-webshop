@@ -5,15 +5,14 @@ function ProductList({products}) {
   return (
       <ul className={productList}>
         {
-          products.map((p, index) => (
+          products.map((p) => (
                   <ProductItem
                       key={p.id}
                       id={p.id}
                       image={p.image}
                       title={p.title}
                       price={p.price}
-                      description={p.description}
-                      featured={(index === 0)}/>
+                      description={p.description}/>
               )
           )
         }
