@@ -5,11 +5,13 @@
 .navbar {
   --nav-light: var(--navy-1);
   --nav-medium: var(--navy-4);
-  --nav-dark: var(--navy-5);
-  --nav-darker: var(--navy-6);
+  --nav-dark: var(--navy-6);
+  --nav-darker: var(--navy-8);
   --nav-light--active: var(--navy-0);
-  --nav-medium--active: var(--navy-7);
+  --nav-medium--active: var(--navy-8);
   --nav-dark--active: var(--navy-4);
+  --nav-darker--active: var(--navy-6);
+  --nav-border: var(--salmon-4);
   width: 100%;
   height: 100%;
   min-height: 85px;
@@ -17,8 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--nav-dark);
-  box-shadow: 0 -2px 0 var(--salmon-4) inset;
+  background-color: var(--salmon-super-light);
+  box-shadow: 0 -1px 0 var(--nav-border) inset;
 }
 
 .websiteLogo {
@@ -33,7 +35,7 @@
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
-  color: var(--nav-light);
+  color: var(--salmon-5);
   margin: auto 0 auto 7px;
 }
 
@@ -53,17 +55,17 @@
   button {
     cursor: pointer;
     font-size: 1.2rem;
-    color: var(--nav-light);
+    color: var(--nav-darker);
     width: auto;
     text-transform: uppercase;
     font-weight: var(--font-weight-light);
-    border: 2px solid var(--nav-dark);
+    border: none;
     background-color: transparent;
     padding: 0;
 
     &:hover,
     &:active {
-      color: var(--nav-light--active);
+      color: var(--nav-darker--active);
     }
   }
 }
@@ -80,9 +82,9 @@
 .loginButton {
   margin-right: 1.5rem;
   color: var(--nav-light);
-  border: 2px solid var(--nav-darker);
-  background-color: var(--nav-darker);
-  box-shadow: inset 0 0 2px var(--navy-dark);
+  border: 2px solid var(--nav-dark);
+  background-color: var(--nav-dark);
+  box-shadow: inset 0 0 2px var(--navy-medium);
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem 0.7rem;

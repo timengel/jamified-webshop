@@ -4,7 +4,9 @@ import {footer} from './Footer.module.scss';
 const Footer = () => {
   return (
       <div className={footer}>
-        THIS IS THE FOOTER
+        <a href='https://www.timengel.me/'>
+          © Tim Engel
+        </a>
       </div>
   );
 };
