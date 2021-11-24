@@ -39,9 +39,7 @@ const Sidebar = () => {
         {
           sections.map((s, index) => {
             return (
-                <SidebarSection key={index}
-                                name={s.name}
-                                bottomSection={`${(index === (s.length - 1))}`}>
+                <SidebarSection key={index} name={s.name}>
                   {
                     s.icon
                   }

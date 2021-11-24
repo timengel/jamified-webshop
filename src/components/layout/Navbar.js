@@ -3,6 +3,7 @@ import {
   navbar,
   navSection,
   navSectionContainer,
+  loginButton,
   loginContainer,
   userButton,
   websiteLogo,
@@ -54,7 +55,7 @@ const Navbar = () => {
           </SignedIn>
           <SignedOut>
             <Link href="/sign-in">
-              <button>Sign in</button>
+              <button className={loginButton}>Sign in</button>
             </Link>
           </SignedOut>
         </div>

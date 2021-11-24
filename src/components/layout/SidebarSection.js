@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   sidebarSection,
-  bottomSidebarSection,
   sectionName,
   sectionIcon,
 } from './SidebarSection.module.scss';
@@ -9,12 +8,9 @@ import {IconContext} from 'react-icons';
 
 const iconSizePx = '30';
 
-const SidebarSection = ({name, bottomSection, children}) => {
+const SidebarSection = ({name, children}) => {
   return (
-      <div
-          className={`
-           ${sidebarSection}
-           ${bottomSection ? bottomSidebarSection : ''}`}>
+      <div className={sidebarSection}>
         <div className={sectionName}>
           {
             name
