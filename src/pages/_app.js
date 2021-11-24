@@ -31,10 +31,7 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
    */
   return (
       <ClerkProvider
-          frontendApi={clerkFrontendApi}
-          navigate={(to) => {
-            router.push(to)
-          }}>
+          frontendApi={clerkFrontendApi}>
         {
           publicPages.includes(router.pathname)
               ? (

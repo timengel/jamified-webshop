@@ -37,9 +37,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={navSection}>
-            <a href='/user'>
+            <Link href='/user'>
               <button>Profile</button>
-            </a>
+            </Link>
           </div>
           <div className={navSection}>
             <Link href='/about'>
