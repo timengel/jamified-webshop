@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={navSection}>
-            <a href='/profile'>
+            <a href='/user'>
               <button>Profile</button>
             </a>
           </div>
