@@ -9,7 +9,6 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import logoPic from '../../../public/logo/logo_jamified-webshop.png';
-import {useEffect, useState} from 'react';
 
 const Navbar = () => {
 

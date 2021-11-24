@@ -8,7 +8,6 @@ import {
   MdSportsBasketball,
   MdBusinessCenter
 } from 'react-icons/md';
-import {IconContext} from 'react-icons';
 import SidebarSection from './SidebarSection';
 
 const sections = [
