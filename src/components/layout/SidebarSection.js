@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-  sidebarSection,
-  sectionName,
   sectionIcon,
+  sectionName,
+  sidebarSection,
 } from './SidebarSection.module.scss';
 import {IconContext} from 'react-icons';
 

@@ -2,10 +2,10 @@ import {
   card,
   content,
   detailBtn,
-  itemImage,
-  detailsOverview,
   detailsDesc,
+  detailsOverview,
   detailsPrice,
+  itemImage,
 } from './ProductItem.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';

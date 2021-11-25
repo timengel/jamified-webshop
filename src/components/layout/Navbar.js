@@ -1,10 +1,10 @@
 import {
+  loginButton,
+  loginContainer,
   logoText,
   navbar,
   navSection,
   navSectionContainer,
-  loginButton,
-  loginContainer,
   userButton,
   websiteLogo,
 } from './Navbar.module.scss';

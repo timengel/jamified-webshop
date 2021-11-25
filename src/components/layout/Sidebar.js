@@ -1,12 +1,10 @@
 import React from 'react';
-import {
-  sidebar
-} from './Sidebar.module.scss';
+import {sidebar} from './Sidebar.module.scss';
 import {FaMountain, FaRunning} from 'react-icons/fa';
 import {
-  MdSportsTennis,
+  MdBusinessCenter,
   MdSportsBasketball,
-  MdBusinessCenter
+  MdSportsTennis
 } from 'react-icons/md';
 import SidebarSection from './SidebarSection';
 

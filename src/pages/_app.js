@@ -3,11 +3,7 @@ import Layout from '../components/layout/Layout';
 import '../styles/Colors.scss';
 import '../styles/App.scss';
 import Head from 'next/head';
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut
-} from '@clerk/nextjs';
+import {ClerkProvider, SignedIn, SignedOut} from '@clerk/nextjs';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 
@@ -66,7 +62,7 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
                         </Head>
                         <p>
                           Please{' '}
-                          <Link href="/sign-in">
+                          <Link href='/sign-in'>
                             <a>sign in</a>
                           </Link>{' '}
                           to access this page.
