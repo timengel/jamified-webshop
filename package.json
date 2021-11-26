@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "clear && next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@clerk/nextjs": "^2.2.1",
+    "@clerk/nextjs": "^2.0.2",
     "cookie-cutter": "^0.2.0",
     "next": "^12.0.2",
     "react": "17.0.2",

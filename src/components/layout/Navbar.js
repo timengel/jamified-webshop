@@ -42,6 +42,11 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={navSection}>
+            <Link href='/cart'>
+              <button>Cart</button>
+            </Link>
+          </div>
+          <div className={navSection}>
             <Link href='/about'>
               <button>About</button>
             </Link>
