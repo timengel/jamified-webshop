@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--salmon-super-light);
+  background-color: var(--salmon-0);
   box-shadow: 0 -1px 0 var(--nav-border) inset;
 }
 
@@ -54,7 +54,7 @@
 
   button {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--nav-darker);
     width: auto;
     text-transform: uppercase;

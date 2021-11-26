@@ -4,10 +4,11 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-color: var(--salmon-6);
+  background-color: var(--salmon-5);
   color: var(--salmon-1);
   border-top: 1px solid var(--salmon-4);
   font-weight: var(--font-weight-light);
+  font-size: 0.5rem;
 
   a {
     color: inherit;
