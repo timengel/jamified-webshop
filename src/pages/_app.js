@@ -12,7 +12,6 @@ const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 const publicPages = [
   '/',
   '/products',
-  '/about',
   '/sign-in/[[...index]]',
   '/sign-up/[[...index]]'
 ];
