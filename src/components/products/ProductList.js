@@ -8,7 +8,7 @@ function ProductList({products}) {
           products.map((p) => (
                   <ProductItem
                       key={p.id}
-                      id={p.id}
+                      slug={p.slug}
                       image={p.image}
                       title={p.title}
                       price={p.price}

@@ -11,7 +11,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 
-function ProductItem({id, title, description, price, image}) {
+function ProductItem({slug, title, description, price, image}) {
   const imageUrl = getStrapiMedia(image);
 
   return (
@@ -29,7 +29,7 @@ function ProductItem({id, title, description, price, image}) {
             <p className={detailsDesc}>{description}</p>
             <p className={detailsPrice}>{price}€</p>
           </div>
-          <Link href={`/products/${id}`}>
+          <Link href={`/products/${slug}`}>
             <button className={detailBtn}>Show Details</button>
           </Link>
         </div>
