@@ -28,6 +28,7 @@
   height: 20rem;
   margin: 1.5rem 0 0 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
 }
 
 
@@ -36,6 +37,7 @@
   height: 100%;
   overflow: hidden;
   background-color: var(--card-light-0);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .itemImage img {
@@ -49,73 +51,75 @@
   text-align: center;
   margin: 0;
   background-color: var(--card-light-1);
-}
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 
-.content h3 {
-  font-size: 1.25rem;
-  font-weight: var(--font-weight-light);
-  margin: 1.5rem 1.5rem 0 1.5rem;
-  color: var(--card-text-heading);
-  letter-spacing: 0.2rem;
-}
-
-.detailsOverview {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 1.5rem 0 1.5rem;
-}
-
-.detailsOverview p {
-  width: 100%;
-  height: 1.25rem;
-  margin: 0;
-}
-
-.detailsDesc {
-  flex: 4;
-  white-space: nowrap;
-  color: var(--card-text-desc);
-  font-weight: var(--font-weight-light);
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.detailsPrice {
-  flex: 1;
-  font-weight: var(--font-weight-medium);
-  text-align: right;
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
-  color: var(--card-navy-accent);
-}
-
-.detailBtn {
-  color: var(--card-dark);
-  border: 2px solid var(--card-medium);
-  background-color: var(--card-medium);
-  box-shadow: inset 0 0 2px var(--card-medium);
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.6rem 0.9rem;
-  margin: 1rem;
-  text-align: center;
-  font-weight: 500;
-
-  background: {
-    image: linear-gradient(45deg, var(--card-dark) 50%, transparent 50%);
-    position: 100%;
-    size: 400%;
+  h3 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-light);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    color: var(--card-text-heading);
+    letter-spacing: 0.2rem;
   }
 
-  transition: background 285ms ease-in-out;
-}
+  .detailsOverview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
 
-.detailBtn:hover,
-.detailBtn:focus {
-  box-shadow: 0 0 3px var(--card-dark);
-  border-color: var(--card-dark);
-  background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
-  color: var(--card-light-1);
+  .detailsOverview p {
+    width: 100%;
+    height: 1.25rem;
+    margin: 0;
+  }
+
+  .detailsDesc {
+    flex: 4;
+    white-space: nowrap;
+    color: var(--card-text-desc);
+    font-weight: var(--font-weight-light);
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .detailsPrice {
+    flex: 1;
+    font-weight: var(--font-weight-medium);
+    text-align: right;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--card-navy-accent);
+  }
+
+  .detailBtn {
+    color: var(--card-dark);
+    border: 2px solid var(--card-medium);
+    background-color: var(--card-medium);
+    box-shadow: inset 0 0 2px var(--card-medium);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+
+    background: {
+      image: linear-gradient(45deg, var(--card-dark) 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+
+    transition: background 285ms ease-in-out;
+  }
+
+  .detailBtn:hover,
+  .detailBtn:focus {
+    box-shadow: 0 0 3px var(--card-dark);
+    border-color: var(--card-dark);
+    background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
+    color: var(--card-light-1);
+  }
 }
