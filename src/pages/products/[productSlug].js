@@ -1,21 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
 import {fetchFromApi} from '../../../lib/api';
 import ProductDetails from '../../components/products/ProductDetails';
 
 const Product = ({product}) => {
 
   return (
-      <div>
-        <h2>
-          A Detail Page for Item {product.slug}.
-        </h2>
-        <div>
-          Back to the {' '}<Link href='/products'>
-          <a>product list.</a>
-        </Link>
-        </div>
-      </div>
+      <ProductDetails product={product}/>
   );
 };
 
