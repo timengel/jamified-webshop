@@ -7,4 +7,11 @@
   place-items: center;
   color: var(--navy-7);
   font-size: 1.5rem;
+
+  .homeHighlight {
+    text-transform: uppercase;
+    font-weight: var(--font-weight-light);
+    letter-spacing: 0.2rem;
+    color: var(--salmon-5);
+  }
 }

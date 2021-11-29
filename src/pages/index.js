@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import {home} from '../styles/Home.module.scss';
+import {home, homeHighlight} from '../styles/Home.module.scss';
 
 const Home = () => {
   return (
       <div className={home}>
         <h1>
-          Welcome to the Jamified Webshop!
+          Welcome to the <span
+            className={homeHighlight}>Jamified Webshop!</span>
         </h1>
         <p>
           Please visit the <Link href='/products'>Products Page</Link>.
