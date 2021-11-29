@@ -1,4 +1,4 @@
-![Jamified Webshop](./public/logo/logo_jamified-webshop.png "Jamified Webshop")
+![Jamified Webshop](./public/logo_jamified-webshop.png "Jamified Webshop")
 
 # Jamified Webshop
 
@@ -8,9 +8,9 @@ architecture. A more detailed description will follow.
 ## ToDo List
 
 - **Frontend**
-    - [ ] Make vertically scrolling product list
-        - Show only 20 products at a time without scrolling
-    - [ ] Add dynamic product detail pages (fetch data from CMS?)
+    - [x] <s>Make vertically scrolling product list</s>
+        - [ ] Show only 20 products at a time without scrolling
+    - [x] <s>Add dynamic product detail pages (fetch data from CMS?)</s>
     - [ ] Add product categories (incl. filter?)
         - Add header/banner for every category (jumbotron style)
         - Add dynamic styling for categories (e.g. different backgrounds)
@@ -18,18 +18,18 @@ architecture. A more detailed description will follow.
     - [ ] Test different rendering strategies --> Performance
         - Pre-render 20/100 products, load more on scroll
 - **Build Process**
-    - [ ] Deploy App on Vercel
+    - [x] <s>Deploy App on Vercel</s>
     - [ ] Make use of ISR (+ On-demand builders?) --> Build speed up?
 - **Content**
-    - [ ] Integrate headless CMS --> Difference to conventional CMS (ease of use, performance,
-      workflow, etc.)?
+    - [x] <s>Integrate headless CMS --> Difference to conventional CMS (ease of use, performance,
+      workflow, etc.)?</s>
     - [ ] Add more dummy data (a lot)
 - **Edge Computing**
-    - [ ] Choose use case(s)
+    - [x] <s>Choose use case(s)
         - Redirects (based on Geolocation --> Different prices, shipping, etc.)
-        - Warenkorb Reservierung (in Upstash Item ID für andere locken?)
-    - [ ] Add Next.js _middleware
-    - [ ] Deploy as Edge Functions / Cloud workers
+        - Warenkorb Reservierung (in Upstash Item ID für andere locken?)</s>
+    - [x] <s>Add Next.js _middleware</s>
+    - [x] <s>Deploy as Edge Functions / Cloud workers</s>
 - **Third Party APIs**
     - [ ] Choose use cases
         - Authentication? --> Auth0
