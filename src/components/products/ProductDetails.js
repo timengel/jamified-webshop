@@ -33,7 +33,7 @@ const ProductDetails = ({product}) => {
             {product.title}
           </div>
           <div className={caption}>
-            A cool caption looks awesome, doesnt it.
+            The caption for {product.title} looks cool, doesnt it.
           </div>
         </div>
         <div className={priceContainer}>
