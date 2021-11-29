@@ -10,7 +10,7 @@ import {
 } from './Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import logoPic from '../../../public/logo/logo_jamified-webshop.png';
+import logoPic from '../../../public/logo_jamified-webshop.png';
 import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs';
 import React from 'react';
 

@@ -30,13 +30,17 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
         {
           publicPages.includes(router.pathname)
               ? (
-                  <Layout>
+                  <>
                     <Head>
                       <title>Jamified Webshop</title>
-                      <link rel='icon' href='../../public/favicon-t.svg'/>
+                      <link rel='icon' href='/favicon_jamified-webshop.ico'/>
+                      <link rel='shortcut icon'
+                            href='/favicon_jamified-webshop.ico'/>
                     </Head>
-                    <Component {...pageProps}/>
-                  </Layout>
+                    <Layout>
+                      <Component {...pageProps}/>
+                    </Layout>
+                  </>
               )
               : (
                   /**
@@ -44,21 +48,19 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
                    * depending on whether or not a visitor is signed in.
                    */
                   <>
+                    <Head>
+                      <title>Jamified Webshop</title>
+                      <link rel='icon' href='/favicon_jamified-webshop.ico'/>
+                      <link rel='shortcut icon'
+                            href='/favicon_jamified-webshop.ico'/>
+                    </Head>
                     <SignedIn>
                       <Layout>
-                        <Head>
-                          <title>Jamified Webshop</title>
-                          <link rel='icon' href='../../public/favicon-t.svg'/>
-                        </Head>
                         <Component {...pageProps}/>
                       </Layout>
                     </SignedIn>
                     <SignedOut>
                       <Layout>
-                        <Head>
-                          <title>Jamified Webshop</title>
-                          <link rel='icon' href='../../public/favicon-t.svg'/>
-                        </Head>
                         <p>
                           Please{' '}
                           <Link href='/sign-in'>

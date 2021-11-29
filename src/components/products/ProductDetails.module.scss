@@ -21,6 +21,7 @@
   height: 100%;
   grid-template-columns: 400px auto;
   grid-template-rows: 200px 200px auto;
+  overflow-x: hidden;
 }
 
 .detailsImage {

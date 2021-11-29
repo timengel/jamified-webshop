@@ -19,8 +19,6 @@ import {getStrapiMedia} from '../../../lib/media';
 const ProductDetails = ({product}) => {
   const imageUrl = getStrapiMedia(product.image);
 
-  console.log(imageUrl);
-
   return (
       <div className={detailsContainer}>
         <div className={detailsImage}>
@@ -39,7 +37,7 @@ const ProductDetails = ({product}) => {
           </div>
         </div>
         <div className={priceContainer}>
-          Now, only <span className={price}>{product.price},-</span>
+          Now only <span className={price}>{product.price},-</span>
         </div>
         <div className={descriptionContainer}>
           <div className={description}>
