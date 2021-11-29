@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductList from '../../components/products/ProductList';
-import {fetchApi} from '../../../lib/api';
+import {fetchFromApi} from '../../../lib/api';
 
 const Products = ({products}) => {
   return (
@@ -10,7 +10,7 @@ const Products = ({products}) => {
 
 // Will be executed on the server during build time
 export async function getStaticProps() {
-  const fetchedProducts = await fetchApi('/products');
+  const fetchedProducts = await fetchFromApi('/products');
 
   return {
     props: {
