@@ -1,8 +1,11 @@
 import {UserProfile} from '@clerk/nextjs';
+import Profile from '../../components/user/Profile';
 
 const UserProfilePage = () => {
   return (
-      <UserProfile path='/user' routing='path'/>
+      <Profile>
+        <UserProfile path='/user' routing='path'/>
+      </Profile>
   )
 }
 

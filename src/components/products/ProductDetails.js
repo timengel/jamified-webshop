@@ -15,6 +15,7 @@ import {
 } from './ProductDetails.module.scss'
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
+import {animatedBtnSalmon} from '../../styles/_globals.module.scss';
 
 const ProductDetails = ({product}) => {
   const imageUrl = getStrapiMedia(product.image);
@@ -69,7 +70,7 @@ const ProductDetails = ({product}) => {
         </div>
         <div className={navigation}>
           Back to the {' '}<Link href='/products'>
-          <a>product list.</a>
+          <button className={animatedBtnSalmon}>Products Page</button>
         </Link>
         </div>
       </div>
