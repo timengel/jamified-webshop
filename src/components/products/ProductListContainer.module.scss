@@ -1,0 +1,4 @@
+.productListContainer {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) auto;
+}

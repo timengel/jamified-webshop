@@ -1,21 +1,24 @@
 import React from 'react';
-import ProductList from '../../components/products/ProductList';
 import {fetchFromApi} from '../../../lib/api';
+import ProductListContainer
+  from '../../components/products/ProductListContainer';
 
-const Products = ({products, categories}) => {
+const Products = ({categories, products}) => {
   return (
-      <ProductList products={products} categories={categories}/>
+      <ProductListContainer categories={categories} products={products}/>
   );
 };
 
-// Will be executed on the server during build time
 export async function getStaticProps() {
-  const fetchedProducts = await fetchFromApi('/products');
   const fetchedCategories = await fetchFromApi('/categories');
+  let products = [];
+  fetchedCategories.map(c => {
+    c.products.map(p => products.push(p));
+  });
 
   return {
     props: {
-      products: fetchedProducts,
+      products: products,
       categories: fetchedCategories,
     }
   };

@@ -1,15 +1,10 @@
-.productListContainer {
-  display: grid;
-  grid-template-columns: var(--sidebar-width) auto;
-
-  .productList {
-    grid-column: 2 / -1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0 1.5rem 1.5rem 0;
-    padding: 0;
-  }
-
+.productList {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0 1.5rem 1.5rem 0;
+  padding: 0;
+  overflow-y: scroll;
 }

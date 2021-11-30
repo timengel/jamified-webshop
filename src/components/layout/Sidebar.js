@@ -6,6 +6,7 @@ import {FiDatabase} from 'react-icons/fi'
 import {BsGear} from 'react-icons/bs'
 import {AiOutlineBlock} from 'react-icons/ai'
 import SidebarSection from './SidebarSection';
+import {generateUniqueID} from '../../../lib/crypto';
 
 const sectionIcons = {
   'back': <BsGear/>,
@@ -21,9 +22,11 @@ const Sidebar = ({categories}) => {
   return (
       <div className={sidebar}>
         {
-          categories.map((c, index) => {
+          categories.map(c => {
             return (
-                <SidebarSection key={index} name={c.name}>
+                <SidebarSection key={generateUniqueID()}
+                                slug={c.slug}
+                                name={c.name}>
                   {
                     sectionIcons[c.slug]
                   }
