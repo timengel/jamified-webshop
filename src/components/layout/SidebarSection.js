@@ -10,7 +10,7 @@ const iconSizePx = '30';
 
 const SidebarSection = ({name, children}) => {
   return (
-      <div className={sidebarSection}>
+      <button className={sidebarSection}>
         <div className={sectionName}>
           {
             name
@@ -24,7 +24,7 @@ const SidebarSection = ({name, children}) => {
             }
           </IconContext.Provider>
         </div>
-      </div>
+      </button>
   );
 };
 

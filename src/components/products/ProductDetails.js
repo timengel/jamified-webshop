@@ -33,7 +33,22 @@ const ProductDetails = ({product}) => {
             {product.title}
           </div>
           <div className={caption}>
-            The caption for {product.title} looks cool, doesnt it.
+            {
+              (product.categories.length === 0)
+                  ?
+                  <>{product.title} doesnt belong to any category.</>
+                  : (product.categories.length > 1)
+                      ? <>{product.title} belongs to the
+                        categories {product.categories.map((c, index) => {
+                          if ((product.categories.length - 1) === index) {
+                            return ' and ' + c.name + '.';
+                          } else {
+                            return c.name + ', ';
+                          }
+                        })}</>
+                      : <>{product.title} belongs to the
+                        category {product.categories[0].name}.</>
+            }
           </div>
         </div>
         <div className={priceContainer}>
