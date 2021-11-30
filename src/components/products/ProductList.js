@@ -2,10 +2,10 @@ import ProductItem from './ProductItem.js';
 import {productList, productListContainer,} from './ProductList.module.scss';
 import Sidebar from '../layout/Sidebar';
 
-function ProductList({products}) {
+function ProductList({products, categories}) {
   return (
       <div className={productListContainer}>
-        <Sidebar/>
+        <Sidebar categories={categories}/>
         <ul className={productList}>
           {
             products.map((p) => (

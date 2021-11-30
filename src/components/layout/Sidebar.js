@@ -1,45 +1,31 @@
 import React from 'react';
 import {sidebar} from './Sidebar.module.scss';
-import {FaMountain, FaRunning} from 'react-icons/fa';
-import {
-  MdBusinessCenter,
-  MdSportsBasketball,
-  MdSportsTennis
-} from 'react-icons/md';
+import {FaRegEye} from 'react-icons/fa';
+import {MdSettingsEthernet, MdSpeed} from 'react-icons/md';
+import {FiDatabase} from 'react-icons/fi'
+import {BsGear} from 'react-icons/bs'
+import {AiOutlineBlock} from 'react-icons/ai'
 import SidebarSection from './SidebarSection';
 
-const sections = [
-  {
-    name: 'Style',
-    icon: <MdBusinessCenter/>
-  },
-  {
-    name: 'Basketball',
-    icon: <MdSportsBasketball/>
-  },
-  {
-    name: 'Tennis',
-    icon: <MdSportsTennis/>
-  },
-  {
-    name: 'Running',
-    icon: <FaRunning/>
-  },
-  {
-    name: 'Outdoor',
-    icon: <FaMountain/>
-  },
-];
+const sectionIcons = {
+  'back': <BsGear/>,
+  'ssg': <MdSpeed/>,
+  'front': <FaRegEye/>,
+  'container': <AiOutlineBlock/>,
+  'database': <FiDatabase/>,
+  'other': <MdSettingsEthernet/>,
+}
 
-const Sidebar = () => {
+const Sidebar = ({categories}) => {
+  console.log(categories);
   return (
       <div className={sidebar}>
         {
-          sections.map((s, index) => {
+          categories.map((c, index) => {
             return (
-                <SidebarSection key={index} name={s.name}>
+                <SidebarSection key={index} name={c.name}>
                   {
-                    s.icon
+                    sectionIcons[c.slug]
                   }
                 </SidebarSection>
             );
