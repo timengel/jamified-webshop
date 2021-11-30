@@ -6,12 +6,15 @@ import Head from 'next/head';
 import {ClerkProvider, SignedIn, SignedOut} from '@clerk/nextjs';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
+import {animatedBtnNavy} from '../styles/_globals.module.scss';
 
 const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 
 const publicPages = [
   '/',
   '/products',
+  '/products/[productSlug]',
+  '/categories/[categorySlug]',
   '/sign-in/[[...index]]',
   '/sign-up/[[...index]]'
 ];
@@ -61,13 +64,16 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
                     </SignedIn>
                     <SignedOut>
                       <Layout>
-                        <p>
-                          Please{' '}
-                          <Link href='/sign-in'>
-                            <a>sign in</a>
-                          </Link>{' '}
-                          to access this page.
-                        </p>
+                        <div className='signInNavigationContainer'>
+                          <p>
+                            Please{' '}
+                            <Link href='/sign-in'>
+                              <button className={animatedBtnNavy}>Sign In
+                              </button>
+                            </Link>{' '}
+                            to access this page.
+                          </p>
+                        </div>
                       </Layout>
                     </SignedOut>
                   </>

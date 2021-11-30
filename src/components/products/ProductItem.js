@@ -1,7 +1,7 @@
 import {
   card,
   content,
-  detailBtn,
+  detailsBtn,
   detailsDesc,
   detailsOverview,
   detailsPrice,
@@ -10,6 +10,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
+import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
 
 function ProductItem({slug, title, description, price, image}) {
   const imageUrl = getStrapiMedia(image);
@@ -30,7 +31,9 @@ function ProductItem({slug, title, description, price, image}) {
             <p className={detailsPrice}>{price}€</p>
           </div>
           <Link href={`/products/${slug}`}>
-            <button className={detailBtn}>Show Details</button>
+            <button className={`${animatedBtnSalmon} ${detailsBtn}`}>Show
+              Details
+            </button>
           </Link>
         </div>
       </li>

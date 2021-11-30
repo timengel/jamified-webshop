@@ -11,16 +11,6 @@
 }
 
 .card {
-  --card-light-0: var(--salmon-0);
-  --card-light-1: var(--salmon-1);
-  --card-medium: var(--salmon-3);
-  --card-dark: var(--salmon-5);
-  --card-text-heading: var(--salmon-6);
-  --card-text-desc: var(--salmon-4);
-  --card-light--active: var(--salmon-2);
-  --card-medium--active: var(--salmon-4);
-  --card-dark--active: var(--salmon-6);
-  --card-navy-accent: var(--navy-8);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
@@ -66,12 +56,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 1rem 1.5rem 0 1.5rem;
-  }
 
-  .detailsOverview p {
-    width: 100%;
-    height: 1.25rem;
-    margin: 0;
+    p {
+      width: 100%;
+      height: 1.25rem;
+      margin: 0;
+    }
   }
 
   .detailsDesc {
@@ -93,33 +83,7 @@
     color: var(--card-navy-accent);
   }
 
-  .detailBtn {
-    color: var(--card-dark);
-    border: 2px solid var(--card-medium);
-    background-color: var(--card-medium);
-    box-shadow: inset 0 0 2px var(--card-medium);
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 0.6rem 0.9rem;
+  .detailsBtn {
     margin: 1rem;
-    text-align: center;
-    font-weight: 500;
-    border-radius: var(--border-radius);
-
-    background: {
-      image: linear-gradient(45deg, var(--card-dark) 50%, transparent 50%);
-      position: 100%;
-      size: 400%;
-    }
-
-    transition: background 285ms ease-in-out;
-  }
-
-  .detailBtn:hover,
-  .detailBtn:focus {
-    box-shadow: 0 0 3px var(--card-dark);
-    border-color: var(--card-dark);
-    background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
-    color: var(--card-light-1);
   }
 }

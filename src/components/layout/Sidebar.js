@@ -18,7 +18,6 @@ const sectionIcons = {
 }
 
 const Sidebar = ({categories}) => {
-  console.log(categories);
   return (
       <div className={sidebar}>
         {

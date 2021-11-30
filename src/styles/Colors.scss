@@ -42,4 +42,28 @@ https://coolors.co/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae201
   --navy-7: #0072ad;
   --navy-8: #023E8A;
   --navy-9: #03045E;
+
+  /* CARD PALETTE */
+  --card-light-0: var(--salmon-0);
+  --card-light-1: var(--salmon-1);
+  --card-medium: var(--salmon-3);
+  --card-dark: var(--salmon-5);
+  --card-text-heading: var(--salmon-6);
+  --card-text-desc: var(--salmon-4);
+  --card-light--active: var(--salmon-2);
+  --card-medium--active: var(--salmon-4);
+  --card-dark--active: var(--salmon-6);
+  --card-navy-accent: var(--navy-8);
+
+  /* NAV Palette */
+  --nav-light: var(--navy-1);
+  --nav-medium: var(--navy-4);
+  --nav-dark: var(--navy-6);
+  --nav-darker: var(--navy-8);
+  --nav-light--active: var(--navy-0);
+  --nav-medium--active: var(--navy-8);
+  --nav-dark--active: var(--navy-4);
+  --nav-darker--active: var(--navy-6);
+  --nav-border: var(--salmon-4);
+  --nav-border-light: var(--salmon-1);
 }

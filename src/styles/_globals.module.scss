@@ -1,0 +1,58 @@
+.animatedBtnSalmon {
+  color: var(--card-dark);
+  border: 2px solid var(--card-medium);
+  background-color: var(--card-medium);
+  box-shadow: inset 0 0 2px var(--card-medium);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+
+  background: {
+    image: linear-gradient(45deg, var(--card-dark) 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+
+  transition: background 285ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px var(--card-dark);
+    border-color: var(--card-dark);
+    background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
+    color: var(--card-light-1);
+  }
+}
+
+.animatedBtnNavy {
+  color: var(--nav-light);
+  border: 2px solid var(--nav-dark);
+  background-color: var(--nav-dark);
+  box-shadow: inset 0 0 2px var(--navy-medium);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+  font-weight: var(--font-weight-light);
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+
+  background: {
+    image: linear-gradient(45deg, var(--nav-medium) 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+
+  transition: background 285ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px var(--nav-medium);
+    border-color: var(--nav-medium);
+    background-position: 1%; // 0 causes 1px light edge on the left side in certain browsers
+    color: var(--nav-medium--active);
+  }
+}

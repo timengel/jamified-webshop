@@ -1,5 +1,5 @@
 import {
-  loginButton,
+  loginBtn,
   loginContainer,
   logoText,
   navbar,
@@ -13,6 +13,7 @@ import Image from 'next/image';
 import logoPic from '../../../public/logo_jamified-webshop.png';
 import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs';
 import React from 'react';
+import {animatedBtnNavy} from '../../styles/_globals.module.scss'
 
 const Navbar = () => {
 
@@ -22,6 +23,7 @@ const Navbar = () => {
                                             alt='Jamified Webshop'
                                             height='70px'
                                             width='70px'
+                                            layout='fixed'
                                             placeholder='blur'/><span
             className={logoText}>Jamified<br/>Webshop</span>
         </div>
@@ -60,7 +62,8 @@ const Navbar = () => {
           </SignedIn>
           <SignedOut>
             <Link href="/sign-in">
-              <button className={loginButton}>Sign in</button>
+              <button className={`${animatedBtnNavy} ${loginBtn}`}>Sign in
+              </button>
             </Link>
           </SignedOut>
         </div>
