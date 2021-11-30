@@ -8,7 +8,6 @@ function Layout({children}) {
   return (
       <div className={layoutContainer}>
         <Navbar/>
-        <Sidebar/>
         <Content>
           {
             children
