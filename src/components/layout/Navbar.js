@@ -6,7 +6,7 @@ import {
   navSection,
   navSectionContainer,
   userButton,
-  websiteLogo,
+  logoContainer,
 } from './Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -19,12 +19,12 @@ const Navbar = () => {
 
   return (
       <header className={navbar}>
-        <div className={websiteLogo}><Image src={logoPic}
-                                            alt='Jamified Webshop'
-                                            height='70px'
-                                            width='70px'
-                                            layout='fixed'
-                                            placeholder='blur'/><span
+        <div className={logoContainer}><Image src={logoPic}
+                                              alt='Jamified Webshop'
+                                              height='45px'
+                                              width='45px'
+                                              layout='fixed'
+                                              placeholder='blur'/><span
             className={logoText}>Jamified<br/>Webshop</span>
         </div>
         <nav className={navSectionContainer}>

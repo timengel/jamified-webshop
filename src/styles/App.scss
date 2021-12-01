@@ -3,6 +3,10 @@
   --font-weight-light: 260;
   --font-weight-medium: 420;
   --font-weight-bold: 700;
+  --text-shadow-stack-navy: 0.025em 0.025em 0 var(--navy-2),
+  0.05em 0.05em 0 var(--navy-4),
+  0.075em 0.075em 0 var(--navy-7),
+  0.1em 0.1em 0 var(--salmon-8);
 }
 
 body {
