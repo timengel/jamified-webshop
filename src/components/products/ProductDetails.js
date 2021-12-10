@@ -16,18 +16,35 @@ import {
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss';
+import {SvgBlob} from 'react-svg-blob';
+import sr from 'seedrandom';
 
 const ProductDetails = ({product}) => {
-  const imageUrl = getStrapiMedia(product.image);
-
+  let imageUrl;
+  let svgSeed;
+  if (product.image) {
+    imageUrl = getStrapiMedia(product.image);
+  } else {
+    svgSeed = sr.alea(product.slug).int32();
+  }
+  
   return (
       <div className={detailsContainer}>
         <div className={detailsImage}>
-          <Image src={imageUrl}
-                 alt={product.title || product.image.name}
-                 width='375'
-                 height='375'
-                 layout='responsive'/>
+          {
+            (product.image)
+                ? <Image src={imageUrl}
+                         alt={product.title || product.image.name}
+                         width='375'
+                         height='375'
+                         layout='responsive'/>
+                : <SvgBlob variant='gradient'
+                           shapeProps={{
+                             seed: svgSeed,
+                             edges: 8
+                           }}
+                           colors={['#0072ad', '#90E0EF']}/>
+          }
         </div>
         <div className={headerContainer}>
           <div className={header}>

@@ -61,7 +61,7 @@ const Navbar = () => {
             </div>
           </SignedIn>
           <SignedOut>
-            <Link href="/sign-in">
+            <Link href='/sign-in'>
               <button className={`${animatedBtnNavy} ${loginBtn}`}>Sign in
               </button>
             </Link>

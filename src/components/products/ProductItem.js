@@ -11,18 +11,37 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
+import {SvgBlob} from 'react-svg-blob';
+import sr from 'seedrandom';
 
-function ProductItem({slug, title, description, price, image}) {
-  const imageUrl = getStrapiMedia(image);
+const ProductItem = ({slug, title, description, price, image}) => {
+  let imageUrl;
+  let svgSeed;
+  if (image) {
+    imageUrl = getStrapiMedia(image);
+  } else {
+    svgSeed = sr.alea(slug).int32();
+  }
 
   return (
       <li className={`${card}`}>
         <div className={itemImage}>
-          <Image src={imageUrl}
-                 alt={title || image.name}
-                 width='500'
-                 height='300'
-                 layout='responsive'/>
+          {
+            (image)
+                ? <Image src={imageUrl}
+                         alt={title || image.name}
+                         width='500'
+                         height='300'
+                         layout='responsive'/>
+                : <SvgBlob variant='gradient'
+                           shapeProps={
+                             {
+                               seed: svgSeed,
+                               edges: 8
+                             }
+                           }
+                           colors={['#0072ad', '#90E0EF']}/>
+          }
         </div>
         <div className={content}>
           <h3>{title}</h3>

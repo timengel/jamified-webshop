@@ -5,10 +5,8 @@ import {SignedIn, SignedOut, useClerk} from '@clerk/nextjs';
 const About = () => {
   return (
       <>
-        <SignedIn>
-          Signed IN.
-          <RequestButton path='/api/auth'/>
-        </SignedIn>
+        Test auth:
+        <RequestButton path='/api/auth'/>
       </>
 
   );
