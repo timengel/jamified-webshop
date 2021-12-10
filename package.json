@@ -16,6 +16,7 @@
     "react-svg-blob": "^0.3.0",
     "sass": "^1.43.4",
     "seedrandom": "^3.0.5",
+    "svgjs": "^2.6.2",
     "uuid": "^8.3.2"
   }
 }

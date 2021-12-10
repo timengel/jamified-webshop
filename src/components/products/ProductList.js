@@ -12,9 +12,11 @@ const ProductList = ({products}) => {
                   key={generateUniqueID()}
                   slug={p.slug}
                   image={p.image}
+                  altImage={p.altImage}
                   title={p.title}
                   price={p.price}
-                  description={p.description}/>
+                  description={p.description}
+              />
           ))
         }
       </ul>

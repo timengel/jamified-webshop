@@ -11,16 +11,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
-import {SvgBlob} from 'react-svg-blob';
-import sr from 'seedrandom';
 
-const ProductItem = ({slug, title, description, price, image}) => {
+const ProductItem = ({slug, title, description, price, image, altImage}) => {
   let imageUrl;
-  let svgSeed;
   if (image) {
     imageUrl = getStrapiMedia(image);
-  } else {
-    svgSeed = sr.alea(slug).int32();
   }
 
   return (
@@ -33,14 +28,12 @@ const ProductItem = ({slug, title, description, price, image}) => {
                          width='500'
                          height='300'
                          layout='responsive'/>
-                : <SvgBlob variant='gradient'
-                           shapeProps={
-                             {
-                               seed: svgSeed,
-                               edges: 10
-                             }
-                           }
-                           colors={['#0096C7', '#ADE8F4']}/>
+                : <svg width='500' height='300' viewBox='0 0 500 300'
+                       xmlns='http://www.w3.org/2000/svg'>
+                  <rect x='50' y='40' rx='60' ry='60' width='220' height='220'
+                        fill={altImage.color}
+                        transform={`rotate(${altImage.rotate}, 160, 150)`}/>
+                </svg>
           }
         </div>
         <div className={content}>

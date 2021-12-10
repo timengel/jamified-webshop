@@ -16,7 +16,6 @@ import {
 import Image from 'next/image';
 import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss';
-import {SvgBlob} from 'react-svg-blob';
 import sr from 'seedrandom';
 
 const ProductDetails = ({product}) => {
@@ -38,12 +37,12 @@ const ProductDetails = ({product}) => {
                          width='375'
                          height='375'
                          layout='responsive'/>
-                : <SvgBlob variant='gradient'
-                           shapeProps={{
-                             seed: svgSeed,
-                             edges: 10
-                           }}
-                           colors={['#0096C7', '#ADE8F4']}/>
+                : <svg width='375' height='375' viewBox='0 0 375 375'
+                       xmlns='http://www.w3.org/2000/svg'>
+                  <rect x='60' y='60' rx='60' ry='60' width='250' height='250'
+                        fill={product.altImage.color}
+                        transform={`rotate(${product.altImage.rotate}, 185, 185)`}/>
+                </svg>
           }
         </div>
         <div className={headerContainer}>
