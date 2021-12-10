@@ -30,9 +30,20 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
                          layout='responsive'/>
                 : <svg width='500' height='300' viewBox='0 0 500 300'
                        xmlns='http://www.w3.org/2000/svg'>
-                  <rect x='50' y='40' rx='60' ry='60' width='220' height='220'
+                  <rect x='50' y='40' rx='60' ry='60'
+                        width='220' height='220'
                         fill={altImage.color}
                         transform={`rotate(${altImage.rotate}, 160, 150)`}/>
+                  <rect className='smallRect' x='70' y='60' rx='60' ry='60'
+                        width='80' height='80'
+                        fill={altImage.color}
+                        fillOpacity='0.5'
+                        transform={`rotate(${altImage.rotate}, 160, 150)`}/>
+                  <style>
+                    {
+                      `.smallRect { filter: brightness(85%); }`
+                    }
+                  </style>
                 </svg>
           }
         </div>

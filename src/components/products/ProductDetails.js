@@ -42,6 +42,17 @@ const ProductDetails = ({product}) => {
                   <rect x='60' y='60' rx='60' ry='60' width='250' height='250'
                         fill={product.altImage.color}
                         transform={`rotate(${product.altImage.rotate}, 185, 185)`}/>
+                  <rect className='smallRect' x='80' y='80' rx='60' ry='60'
+                        width='90'
+                        height='90'
+                        fill={product.altImage.color}
+                        fillOpacity='0.5'
+                        transform={`rotate(${product.altImage.rotate}, 185, 185)`}/>
+                  <style>
+                    {
+                      `.smallRect { filter: brightness(85%); }`
+                    }
+                  </style>
                 </svg>
           }
         </div>
