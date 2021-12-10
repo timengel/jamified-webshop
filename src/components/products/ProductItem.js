@@ -37,7 +37,7 @@ const ProductItem = ({slug, title, description, price, image}) => {
                            shapeProps={
                              {
                                seed: svgSeed,
-                               edges: 8
+                               edges: 10
                              }
                            }
                            colors={['#0096C7', '#ADE8F4']}/>
