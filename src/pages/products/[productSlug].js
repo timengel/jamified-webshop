@@ -1,7 +1,7 @@
 import React from 'react';
 import {fetchFromApi} from '../../../lib/api';
 import ProductDetails from '../../components/products/ProductDetails';
-import {getColorByIndex, getDigits} from '../../../lib/utils';
+import {generateDummyImage} from '../../../lib/utils';
 
 const Product = ({product}) => {
 
@@ -15,11 +15,7 @@ export async function getStaticProps(context) {
   const fetchedProduct = await fetchFromApi(`/products/${productSlug}`);
 
   if (!fetchedProduct.image) {
-    const seed = getDigits(fetchedProduct.price, 2);
-    fetchedProduct.altImage = {
-      color: getColorByIndex(seed),
-      rotate: seed,
-    }
+    fetchedProduct.altImage = generateDummyImage(fetchedProduct);
   }
 
   return {
