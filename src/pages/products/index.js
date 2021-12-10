@@ -16,6 +16,12 @@ export async function getStaticProps() {
     c.products.map(p => products.push(p));
   });
 
+  // Filter duplicated products (due to multiple categories)
+  products = products.filter((product, index, self) =>
+      index === self.findIndex((p) => {
+        return (p.slug === product.slug)
+      }));
+
   return {
     props: {
       products: products,
