@@ -1,7 +1,7 @@
 import ProductItem from './ProductItem.js';
 import {productList,} from './ProductList.module.scss';
 import {generateUniqueID} from '../../../lib/crypto';
-import {sortById} from '../../../lib/sort';
+import {sortById} from '../../../lib/utils';
 
 const ProductList = ({products}) => {
   return (

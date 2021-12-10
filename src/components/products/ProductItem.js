@@ -40,7 +40,7 @@ const ProductItem = ({slug, title, description, price, image}) => {
                                edges: 8
                              }
                            }
-                           colors={['#0072ad', '#90E0EF']}/>
+                           colors={['#0096C7', '#ADE8F4']}/>
           }
         </div>
         <div className={content}>

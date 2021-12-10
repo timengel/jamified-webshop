@@ -27,7 +27,7 @@ const ProductDetails = ({product}) => {
   } else {
     svgSeed = sr.alea(product.slug).int32();
   }
-  
+
   return (
       <div className={detailsContainer}>
         <div className={detailsImage}>
@@ -43,7 +43,7 @@ const ProductDetails = ({product}) => {
                              seed: svgSeed,
                              edges: 8
                            }}
-                           colors={['#0072ad', '#90E0EF']}/>
+                           colors={['#0096C7', '#ADE8F4']}/>
           }
         </div>
         <div className={headerContainer}>
