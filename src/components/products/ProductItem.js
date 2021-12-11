@@ -9,8 +9,8 @@ import {
 } from './ProductItem.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
+import {getStrapiMedia} from '../../../lib/api';
 
 const ProductItem = ({slug, title, description, price, image, altImage}) => {
   let imageUrl;

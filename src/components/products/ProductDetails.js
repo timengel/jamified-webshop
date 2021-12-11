@@ -14,9 +14,9 @@ import {
   priceContainer,
 } from './ProductDetails.module.scss'
 import Image from 'next/image';
-import {getStrapiMedia} from '../../../lib/media';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss';
 import sr from 'seedrandom';
+import {getStrapiMedia} from '../../../lib/api';
 
 const ProductDetails = ({product}) => {
   let imageUrl;
