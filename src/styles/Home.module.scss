@@ -17,16 +17,6 @@
     font-size: 2.25rem;
     color: var(--navy-7);
 
-    .highlight {
-      text-transform: uppercase;
-      font-weight: var(--font-weight-light);
-      letter-spacing: 0.2rem;
-      color: var(--salmon-5);
-      margin-top: 2rem;
-      font-size: 3.5rem;
-      text-shadow: var(--text-shadow-stack-navy)
-    }
-
     .logo {
       display: flex;
       flex-direction: column;
@@ -40,4 +30,22 @@
     flex: 1;
     color: var(--navy-7);
   }
+}
+
+.highlight {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0.2rem;
+  color: var(--salmon-5);
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  text-shadow: var(--text-shadow-stack-navy)
+}
+
+.pageNotFound {
+  width: auto;
+  height: auto;
+  font-size: 2rem;
+  margin-top: 25%;
+  text-align: center;
 }
