@@ -28,7 +28,7 @@ const handler = async (req) => {
     }
     return NextResponse.redirect('/404');
   }
-  return NextResponse.redirect('/sign-in');
+  return NextResponse.redirect('/');
 };
 
 export default withSession(handler);
