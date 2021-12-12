@@ -1,14 +1,16 @@
 import React from 'react';
-import Link from 'next/link';
 import {SignedIn, SignedOut, useClerk} from '@clerk/nextjs';
 
 const About = () => {
   return (
       <>
-        Test auth:
-        <RequestButton path='/api/auth'/>
+        <SignedIn>
+          Test auth (signed IN): <RequestButton path='/api/auth'/>
+        </SignedIn>
+        <SignedOut>
+          Test auth (signed OUT): <RequestButton path='/api/auth'/>
+        </SignedOut>
       </>
-
   );
 };
 
@@ -42,12 +44,8 @@ export const RequestButton = ({
   };
 
   return (
-      <button
-          onClick={makeRequest}
-          type='button'
-      >
-        Test Auth
-      </button>
+      <button onClick={makeRequest}
+              type='button'>Test Auth</button>
   );
 }
 

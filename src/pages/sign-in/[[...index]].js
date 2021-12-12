@@ -1,8 +1,8 @@
-import {SignIn} from '@clerk/nextjs';
+import SignInContainer from '../../components/auth/SignInContainer';
 
 const SignInPage = () => {
   return (
-      <SignIn path='/sign-in' routing='path'/>
+      <SignInContainer/>
   )
 }
 

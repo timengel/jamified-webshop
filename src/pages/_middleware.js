@@ -1,7 +1,7 @@
 import {withSession} from '@clerk/nextjs/edge';
 import {NextResponse} from 'next/server';
-import {isAuthenticated, isAuthorized} from '../../../lib/auth';
-import {PUBLIC_PAGES} from '../../../lib/constants';
+import {isAuthenticated, isAuthorized} from '../../lib/auth';
+import {PUBLIC_PAGES} from '../../lib/constants';
 
 // Must return a response object
 const handler = async (req) => {
