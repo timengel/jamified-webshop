@@ -6,13 +6,14 @@ import {PUBLIC_PAGES} from '../../../lib/constants';
 // Must return a response object
 const handler = async (req) => {
 
-  if (PUBLIC_PAGES.includes(req.url)) {
-    return NextResponse.next();
-  }
   console.log('########## request');
   console.log(req);
   console.log('########## request.session');
   console.log(req.session);
+
+  if (PUBLIC_PAGES.includes(req.url)) {
+    return NextResponse.next();
+  }
 
   const startTime = new Date().getTime();
 
