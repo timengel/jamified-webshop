@@ -1,7 +1,21 @@
 import {withSession} from '@clerk/nextjs/edge';
 import {NextResponse} from 'next/server';
 import {isAuthenticated, isAuthorized} from '../../lib/auth';
-import {PUBLIC_PAGES} from '../../lib/constants';
+
+const PUBLIC_PAGES = [
+  '/',
+  '/404',
+  '/_next',
+  // '/products',
+  // '/products/[productSlug]',
+  // '/categories/[categorySlug]',
+  '/sign-in',
+  '/sign-in/[[...index]]',
+  '/sign-up',
+  '/sign-up/[[...index]]',
+  // '/user',
+  // '/user/[[...index]]'
+]
 
 // Must return a response object
 const handler = async (req) => {
