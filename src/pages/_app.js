@@ -4,34 +4,22 @@ import '../styles/Colors.scss';
 import '../styles/App.scss';
 import Head from 'next/head';
 import {ClerkProvider, SignedIn, SignedOut} from '@clerk/nextjs';
-import {useRouter} from 'next/router';
 import Link from 'next/link';
 import {animatedBtnNavy} from '../styles/_globals.module.scss';
+import {PUBLIC_PAGES} from '../../lib/constants';
+import {useRouter} from 'next/router';
 
 const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
-
-const publicPages = [
-  '/',
-  '/products',
-  '/products/[productSlug]',
-  '/categories/[categorySlug]',
-  '/sign-in/[[...index]]',
-  '/sign-up/[[...index]]'
-];
 
 const JamifiedWebshopApp = ({Component, pageProps}) => {
 
   const router = useRouter();
 
-  /**
-   * If the current route is listed as public, render it directly.
-   * Otherwise, use Clerk to require authentication.
-   */
   return (
       <ClerkProvider
           frontendApi={clerkFrontendApi}>
         {
-          publicPages.includes(router.pathname)
+          PUBLIC_PAGES.includes(router.pathname)
               ? (
                   <>
                     <Head>
