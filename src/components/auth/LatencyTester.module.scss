@@ -1,0 +1,28 @@
+.latencyTesterContainer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 150px;
+  overflow-y: scroll;
+  font-size: 1.5rem;
+}
+
+.tip {
+  margin-top: 100px;
+}
+
+.latencyItem {
+  font-size: 1rem;
+}
+
+.averageLatency {
+  font-weight: var(--font-weight-bold);
+}
+
+.testAuthBtn {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
