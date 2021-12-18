@@ -12,10 +12,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logoPic from '../../../public/logo_jamified-webshop.png';
 import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs';
-import React from 'react';
+import React, {useState} from 'react';
 import {animatedBtnNavy} from '../../styles/_globals.module.scss'
 
 const Navbar = () => {
+
+  const [state, setState] = useState(false);
+
+  const rerender = () => {
+    setState(!state);
+  }
 
   return (
       <header className={navbar}>
@@ -44,8 +50,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={navSection}>
-            <Link href='/cart'>
-              <button>Cart</button>
+            <Link href='/cart'
+                  prefetch='false'>
+              <button onClick={rerender}>Cart</button>
             </Link>
           </div>
           <div className={navSection}>
