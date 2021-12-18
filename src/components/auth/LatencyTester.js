@@ -26,7 +26,15 @@ const LatencyTester = () => {
     if (response.status === 200) {
       const responseTime = new Date().getTime() - start;
       setPerformance({
-        latencies: [...performance.latencies, responseTime],
+        latencies: [...performance.latencies,
+          {
+            time: responseTime,
+            location: {
+              country: response.geo?.country,
+              region: response.geo?.region,
+              city: response.geo?.city
+            }
+          }],
         measured: true
       });
       setLatencyStats({
@@ -53,7 +61,8 @@ const LatencyTester = () => {
                   {
                     performance.latencies.map(
                         (l) => <li key={generateUniqueID()}
-                                   className={latencyItem}>{l}ms</li>)
+                                   className={latencyItem}>{l.time}ms;
+                          Location: {l.location.country}, {l.location.region}, {l.location.city}</li>)
                   }
                 </ul>
                 {
