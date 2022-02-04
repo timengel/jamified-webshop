@@ -3,14 +3,14 @@ import Layout from '../components/layout/Layout';
 import '../styles/Colors.scss';
 import '../styles/App.scss';
 import Head from 'next/head';
-import {ClerkProvider} from '@clerk/nextjs';
 
 const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 
 const JamifiedWebshopApp = ({Component, pageProps}) => {
   return (
-      <ClerkProvider
-          frontendApi={clerkFrontendApi}>
+      // <ClerkProvider
+      //     frontendApi={clerkFrontendApi}>
+      <>
         <Head>
           <title>Jamified Webshop</title>
           <link rel='icon' href='/favicon_jamified-webshop.ico'/>
@@ -20,7 +20,8 @@ const JamifiedWebshopApp = ({Component, pageProps}) => {
         <Layout>
           <Component {...pageProps}/>
         </Layout>
-      </ClerkProvider>
+      </>
+      // </ClerkProvider>
   );
 };
 

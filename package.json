@@ -8,7 +8,6 @@
     "start": "clear && next build && next start"
   },
   "dependencies": {
-    "@clerk/nextjs": "^2.0.2",
     "@tsndr/cloudflare-worker-jwt": "^1.1.5",
     "jose": "^2.0.5",
     "next": "^12.0.4",

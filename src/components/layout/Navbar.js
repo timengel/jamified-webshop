@@ -1,19 +1,14 @@
 import {
-  loginBtn,
-  loginContainer,
+  logoContainer,
   logoText,
   navbar,
   navSection,
   navSectionContainer,
-  userButton,
-  logoContainer,
 } from './Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoPic from '../../../public/logo_jamified-webshop.png';
-import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs';
 import React, {useState} from 'react';
-import {animatedBtnNavy} from '../../styles/_globals.module.scss'
 
 const Navbar = () => {
 
@@ -61,19 +56,6 @@ const Navbar = () => {
             </Link>
           </div>
         </nav>
-        <div className={loginContainer}>
-          <SignedIn>
-            <div className={userButton}>
-              <UserButton/>
-            </div>
-          </SignedIn>
-          <SignedOut>
-            <Link href='/sign-in'>
-              <button className={`${animatedBtnNavy} ${loginBtn}`}>Sign in
-              </button>
-            </Link>
-          </SignedOut>
-        </div>
       </header>
   );
 };
