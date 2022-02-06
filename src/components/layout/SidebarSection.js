@@ -21,11 +21,12 @@ const SidebarSection = ({name, slug, children}) => {
       <button
           onClick={() => console.log('Click: Hydrated SidebarSection: ' + name)}
           className={sidebarSection}
-          style={{
-            background: didHydrate
-                ? "#34eb9e"
-                : "#ff788c",
-          }}>
+          // style={{
+          //   background: didHydrate
+          //       ? "#34eb9e"
+          //       : "#ff788c",
+          // }}
+      >
         <div className={sectionName}>
           {
             name

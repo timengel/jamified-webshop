@@ -1,0 +1,450 @@
+{
+  "props": {
+    "pageProps": {
+      "products": [
+        {
+          "id": 1,
+          "title": "Docker",
+          "description": "Empowering App Development for Developers",
+          "price": 544.41,
+          "slug": "docker",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.188Z",
+          "updated_at": "2021-12-10T15:58:51.952Z",
+          "Custom_field": [
+            {
+              "id": 1,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 36,
+            "name": "docker.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 600,
+            "height": 600,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151766/jamified-webshop/thumbnail_docker_b9b187d432.png",
+                "hash": "thumbnail_docker_b9b187d432",
+                "mime": "image/png",
+                "name": "thumbnail_docker.png",
+                "path": null,
+                "size": 27.2,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_docker_b9b187d432",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "docker_b9b187d432",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 185.87,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151765/jamified-webshop/docker_b9b187d432.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/docker_b9b187d432",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:06.978Z",
+            "updated_at": "2021-12-10T15:56:07.012Z"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Gatsby",
+          "description": "Blazing fast modern site generator for React. Go beyond static sites: build blogs, e-commerce sites, full-blown apps, and more with Gatsby.",
+          "price": 517.28,
+          "slug": "gatsby",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.187Z",
+          "updated_at": "2021-12-10T15:59:20.251Z",
+          "Custom_field": [
+            {
+              "id": 2,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 32,
+            "name": "gatsby.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 600,
+            "height": 600,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151765/jamified-webshop/thumbnail_gatsby_adcfb7369c.png",
+                "hash": "thumbnail_gatsby_adcfb7369c",
+                "mime": "image/png",
+                "name": "thumbnail_gatsby.png",
+                "path": null,
+                "size": 23.07,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_gatsby_adcfb7369c",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "gatsby_adcfb7369c",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 152.91,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151764/jamified-webshop/gatsby_adcfb7369c.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/gatsby_adcfb7369c",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:05.574Z",
+            "updated_at": "2021-12-10T15:56:05.579Z"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Nuxt.js",
+          "description": "The Intuitive Vue Framework",
+          "price": 856.43,
+          "slug": "nuxt-js",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.188Z",
+          "updated_at": "2021-12-10T15:59:31.535Z",
+          "Custom_field": [
+            {
+              "id": 3,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 44,
+            "name": "nuxt-js.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 600,
+            "height": 600,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151768/jamified-webshop/thumbnail_nuxt_js_0a816a956a.png",
+                "hash": "thumbnail_nuxt_js_0a816a956a",
+                "mime": "image/png",
+                "name": "thumbnail_nuxt-js.png",
+                "path": null,
+                "size": 16.68,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_nuxt_js_0a816a956a",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "nuxt_js_0a816a956a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 118.61,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151767/jamified-webshop/nuxt_js_0a816a956a.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/nuxt_js_0a816a956a",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:09.004Z",
+            "updated_at": "2021-12-10T15:56:09.009Z"
+          }
+        },
+        {
+          "id": 4,
+          "title": "Next.js",
+          "description": "The React Framework",
+          "price": 320.05,
+          "slug": "next-js",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.192Z",
+          "updated_at": "2021-12-10T15:59:44.325Z",
+          "Custom_field": [
+            {
+              "id": 4,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 40,
+            "name": "next-js.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 600,
+            "height": 600,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151768/jamified-webshop/thumbnail_next_js_f724bb9c12.png",
+                "hash": "thumbnail_next_js_f724bb9c12",
+                "mime": "image/png",
+                "name": "thumbnail_next-js.png",
+                "path": null,
+                "size": 9.26,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_next_js_f724bb9c12",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "next_js_f724bb9c12",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 38.64,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151767/jamified-webshop/next_js_f724bb9c12.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/next_js_f724bb9c12",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:08.427Z",
+            "updated_at": "2021-12-10T15:56:08.433Z"
+          }
+        },
+        {
+          "id": 5,
+          "title": "npm",
+          "description": "Build amazing things",
+          "price": 582.98,
+          "slug": "npm",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.192Z",
+          "updated_at": "2021-12-10T15:59:54.049Z",
+          "Custom_field": [
+            {
+              "id": 6,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 42,
+            "name": "npm.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 600,
+            "height": 600,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151768/jamified-webshop/thumbnail_npm_73fb2ede32.png",
+                "hash": "thumbnail_npm_73fb2ede32",
+                "mime": "image/png",
+                "name": "thumbnail_npm.png",
+                "path": null,
+                "size": 5.58,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_npm_73fb2ede32",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "npm_73fb2ede32",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 30.66,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151767/jamified-webshop/npm_73fb2ede32.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/npm_73fb2ede32",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:08.874Z",
+            "updated_at": "2021-12-10T15:56:08.881Z"
+          }
+        },
+        {
+          "id": 6,
+          "title": "Rust",
+          "description": "A language empowering everyone to build reliable and efficient software.",
+          "price": 241.71,
+          "slug": "rust",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.192Z",
+          "updated_at": "2021-12-10T16:00:29.961Z",
+          "Custom_field": [
+            {
+              "id": 5,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 49,
+            "name": "rust.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 375,
+            "height": 375,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151770/jamified-webshop/thumbnail_rust_b1f1289e77.png",
+                "hash": "thumbnail_rust_b1f1289e77",
+                "mime": "image/png",
+                "name": "thumbnail_rust.png",
+                "path": null,
+                "size": 15.83,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_rust_b1f1289e77",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "rust_b1f1289e77",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 12.18,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151769/jamified-webshop/rust_b1f1289e77.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/rust_b1f1289e77",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:10.492Z",
+            "updated_at": "2021-12-10T15:56:10.497Z"
+          }
+        },
+        {
+          "id": 7,
+          "title": "Vue.js",
+          "description": "The Progressive JavaScript Framework.",
+          "price": 119.45,
+          "slug": "vue-js",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.192Z",
+          "updated_at": "2021-12-10T16:00:37.106Z",
+          "Custom_field": [
+            {
+              "id": 9,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 54,
+            "name": "vue-js.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 400,
+            "height": 400,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151771/jamified-webshop/thumbnail_vue_js_08eda19751.png",
+                "hash": "thumbnail_vue_js_08eda19751",
+                "mime": "image/png",
+                "name": "thumbnail_vue-js.png",
+                "path": null,
+                "size": 11,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_vue_js_08eda19751",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "vue_js_08eda19751",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 4.56,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151771/jamified-webshop/vue_js_08eda19751.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/vue_js_08eda19751",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:12.148Z",
+            "updated_at": "2021-12-10T15:56:12.154Z"
+          }
+        },
+        {
+          "id": 8,
+          "title": "SQLite",
+          "description": "Small. Fast. Reliable. Choose any three",
+          "price": 993.04,
+          "slug": "sq-lite",
+          "status": "published",
+          "created_at": "2021-12-10T15:51:01.192Z",
+          "updated_at": "2021-12-10T16:01:05.264Z",
+          "Custom_field": [
+            {
+              "id": 7,
+              "title": "Select the size of your sticker",
+              "required": true,
+              "options": "Small[+0.00]|Medium[+0.40]|Large[+0.80]"
+            }
+          ],
+          "image": {
+            "id": 51,
+            "name": "sq-lite.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 375,
+            "height": 375,
+            "formats": {
+              "thumbnail": {
+                "ext": ".png",
+                "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151770/jamified-webshop/thumbnail_sq_lite_abddaf3d4c.png",
+                "hash": "thumbnail_sq_lite_abddaf3d4c",
+                "mime": "image/png",
+                "name": "thumbnail_sq-lite.png",
+                "path": null,
+                "size": 12.58,
+                "width": 156,
+                "height": 156,
+                "provider_metadata": {
+                  "public_id": "jamified-webshop/thumbnail_sq_lite_abddaf3d4c",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "sq_lite_abddaf3d4c",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 7.1,
+            "url": "https://res.cloudinary.com/tim-engel/image/upload/v1639151770/jamified-webshop/sq_lite_abddaf3d4c.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "jamified-webshop/sq_lite_abddaf3d4c",
+              "resource_type": "image"
+            },
+            "created_at": "2021-12-10T15:56:11.165Z",
+            …

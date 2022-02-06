@@ -14,10 +14,11 @@ import Spinner from './Spinner';
 const Navbar = () => {
   const [didHydrate, setDidHydrate] = React.useState(false);
   React.useEffect(() => {
+    const delay = 1;
     setTimeout(function () {
       setDidHydrate(true);
-      console.log('(DELAY: 1500ms) Hydrated: Navbar');
-    }, 1500);
+      console.log('(DELAY: ' + delay + 'ms) Hydrated: Navbar');
+    }, delay);
   }, []);
 
   const [state, setState] = useState(false);
@@ -28,11 +29,12 @@ const Navbar = () => {
   return (
       <React.Suspense fallback={<Spinner/>}>
         <header className={navbar}
-                style={{
-                  background: didHydrate
-                      ? "#4beaa9"
-                      : "#ff788c",
-                }}>
+            // style={{
+            //   background: didHydrate
+            //       ? "#4beaa9"
+            //       : "#ff788c",
+            // }}
+        >
           <div className={logoContainer}><Image src={logoPic}
                                                 alt='Jamified Webshop'
                                                 height='45px'
