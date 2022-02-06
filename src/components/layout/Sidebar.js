@@ -7,6 +7,7 @@ import {BsGear} from 'react-icons/bs'
 import {AiOutlineBlock} from 'react-icons/ai'
 import SidebarSection from './SidebarSection';
 import {generateUniqueID} from '../../../lib/crypto';
+import Spinner from './Spinner';
 
 const sectionIcons = {
   'back': <BsGear/>,
@@ -23,13 +24,15 @@ const Sidebar = ({categories}) => {
         {
           categories.map(c => {
             return (
-                <SidebarSection key={generateUniqueID()}
-                                slug={c.slug}
-                                name={c.name}>
-                  {
-                    sectionIcons[c.slug]
-                  }
-                </SidebarSection>
+                <React.Suspense fallback={<Spinner/>}>
+                  <SidebarSection key={generateUniqueID()}
+                                  slug={c.slug}
+                                  name={c.name}>
+                    {
+                      sectionIcons[c.slug]
+                    }
+                  </SidebarSection>
+                </React.Suspense>
             );
           })
         }

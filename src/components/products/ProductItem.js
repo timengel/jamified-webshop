@@ -6,13 +6,30 @@ import {
   detailsOverview,
   detailsPrice,
   itemImage,
+  hydrated,
+  hydrateBtn
 } from './ProductItem.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
 import {getStrapiMedia} from '../../../lib/api';
+import React from 'react';
+import Spinner from '../layout/Spinner';
 
 const ProductItem = ({slug, title, description, price, image, altImage}) => {
+  const [didHydrate, setDidHydrate] = React.useState(false);
+  React.useEffect(() => {
+    if (slug === 'gatsby') {
+      setTimeout(function () {
+        setDidHydrate(true);
+        console.log('(DELAY: 2500ms) Hydrated: ProductItem ' + slug)
+      }, 2500);
+    } else {
+      setDidHydrate(true);
+      console.log('Hydrated: ProductItem ' + slug)
+    }
+  }, []);
+
   let imageUrl;
   if (image) {
     imageUrl = getStrapiMedia(image);
@@ -47,7 +64,12 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
                 </svg>
           }
         </div>
-        <div className={content}>
+        <div className={content}
+             style={{
+               background: didHydrate
+                   ? "#4beaa9"
+                   : "#ff788c",
+             }}>
           <h3>{title}</h3>
           <div className={detailsOverview}>
             <p className={detailsDesc}>{description}</p>
@@ -58,6 +80,14 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
               Details
             </button>
           </Link>
+          <button className={`${detailsBtn} ${hydrateBtn} ${didHydrate
+              ? hydrated : null}`}
+                  onClick={() => console.log(
+                      'Click: Hydrated ProductItem ' + slug)}>
+            {didHydrate
+                ? 'I\'m hydrated'
+                : 'Hydrate me'}
+          </button>
         </div>
       </li>
   );

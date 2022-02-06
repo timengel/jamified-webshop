@@ -3,6 +3,7 @@ import {fetchFromApi} from '../../../lib/api';
 import ProductListContainer
   from '../../components/products/ProductListContainer';
 import {generateDummyImage,} from '../../../lib/utils';
+import Spinner from '../../components/layout/Spinner';
 
 const Products = ({categories, products}) => {
   return (
