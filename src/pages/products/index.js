@@ -28,6 +28,21 @@ export async function getStaticProps() {
         return (p.slug === product.slug)
       }));
 
+  [
+    'status',
+    'created_at',
+    'updated_at',
+    'Custom_field',
+    'products'
+  ].forEach(k => {
+    products.forEach(p => {
+      delete p[k]
+    })
+    fetchedCategories.forEach(c => {
+      delete c[k]
+    })
+  });
+
   return {
     props: {
       products: products,
