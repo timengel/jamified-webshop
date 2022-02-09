@@ -66,11 +66,12 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
           }
         </div>
         <div className={content}
-            // style={{
-            //   background: didHydrate
-            //       ? "#4beaa9"
-            //       : "#ff788c",
-            // }}
+             style={{
+               background: '#ff788c'
+               //   background: didHydrate
+               //       ? "#4beaa9"
+               //       : "#ff788c",
+             }}
         >
           <h3>{title}</h3>
           <div className={detailsOverview}>
@@ -82,14 +83,19 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
               Details
             </button>
           </Link>
-          {/*<button className={`${detailsBtn} ${hydrateBtn} ${didHydrate*/}
-          {/*    ? hydrated : null}`}*/}
-          {/*        onClick={() => console.log(*/}
-          {/*            'Click: Hydrated ProductItem ' + slug)}>*/}
-          {/*  {didHydrate*/}
-          {/*      ? 'I\'m hydrated'*/}
-          {/*      : 'Hydrate me'}*/}
-          {/*</button>*/}
+          <button className={`${detailsBtn} ${hydrateBtn} ${didHydrate
+              ? null : null}`}
+                  onClick={() => console.log(
+                      'Click: Hydrated ProductItem ' + slug)}>
+            {
+              (slug === 'gatsby')
+                  ? 'I\'m hydrated'
+                  : 'Hydrate me'
+              // didHydrate
+              //   ? 'I\'m hydrated'
+              //   : 'Hydrate me'
+            }
+          </button>
         </div>
       </li>
   );

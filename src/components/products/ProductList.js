@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import ProductItem from './ProductItem.js';
 import {productList,} from './ProductList.module.scss';
 import {generateUniqueID} from '../../../lib/crypto';
 import {sortById} from '../../../lib/utils';
 import Spinner from '../layout/Spinner';
+
+// Lazy loading ProductItem on the client side:
+// const ProductItem = lazy(() => import('./ProductItem.js'));
 
 const ProductList = ({products}) => {
   return (

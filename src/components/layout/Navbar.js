@@ -29,11 +29,11 @@ const Navbar = () => {
   return (
       <React.Suspense fallback={<Spinner/>}>
         <header className={navbar}
-            // style={{
-            //   background: didHydrate
-            //       ? "#4beaa9"
-            //       : "#ff788c",
-            // }}
+                style={{
+                  background: didHydrate
+                      ? "#4beaa9"
+                      : "#ff788c",
+                }}
         >
           <div className={logoContainer}><Image src={logoPic}
                                                 alt='Jamified Webshop'
