@@ -43,7 +43,7 @@ export async function getStaticProps() {
     })
   });
 
-  products = products.slice(0, 999);
+  products = products.slice(0, 399);
 
   return {
     props: {
