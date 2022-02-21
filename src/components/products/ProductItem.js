@@ -14,21 +14,12 @@ import Image from 'next/image';
 import {animatedBtnSalmon} from '../../styles/_globals.module.scss'
 import {getStrapiMedia} from '../../../lib/api';
 import React from 'react';
-import Spinner from '../layout/Spinner';
 
 const ProductItem = ({slug, title, description, price, image, altImage}) => {
   const [didHydrate, setDidHydrate] = React.useState(false);
   React.useEffect(() => {
-    if (slug === 'gatsby') {
-      const delay = 1500;
-      setTimeout(function () {
-        setDidHydrate(true);
-        console.log('(DELAY: ' + delay + 'ms) Hydrated: ProductItem ' + slug);
-      }, delay);
-    } else {
-      setDidHydrate(true);
-      console.log('Hydrated: ProductItem ' + slug)
-    }
+    setDidHydrate(true);
+    console.log('Hydrated: ProductItem ' + slug)
   }, []);
 
   let imageUrl;
@@ -67,10 +58,9 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
         </div>
         <div className={content}
              style={{
-               background: '#ff788c'
-               //   background: didHydrate
-               //       ? "#4beaa9"
-               //       : "#ff788c",
+               background: didHydrate
+                   ? "#4beaa9"
+                   : "#ff788c",
              }}
         >
           <h3>{title}</h3>
@@ -88,12 +78,9 @@ const ProductItem = ({slug, title, description, price, image, altImage}) => {
                   onClick={() => console.log(
                       'Click: Hydrated ProductItem ' + slug)}>
             {
-              (slug === 'gatsby')
+              didHydrate
                   ? 'I\'m hydrated'
                   : 'Hydrate me'
-              // didHydrate
-              //   ? 'I\'m hydrated'
-              //   : 'Hydrate me'
             }
           </button>
         </div>

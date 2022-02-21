@@ -11,11 +11,11 @@ const ProductListContainer = ({products, categories}) => {
 
   return (
       <div className={productListContainer}
-          // style={{
-          //   background: didHydrate
-          //       ? "#34eb9e"
-          //       : "#ff788c",
-          // }}
+           style={{
+             background: didHydrate
+                 ? "#34eb9e"
+                 : "#ff788c",
+           }}
       >
         <Sidebar categories={categories}/>
         <ProductList products={products}/>
