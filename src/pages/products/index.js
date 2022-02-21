@@ -43,6 +43,7 @@ export async function getStaticProps() {
     })
   });
 
+  products.sort((a, b) => a.id - b.id);
   products = products.slice(0, 399);
 
   return {
